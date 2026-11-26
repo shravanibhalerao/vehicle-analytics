@@ -80,4 +80,62 @@ venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
-The
+The YOLOv8n weights and the CLIP model (~600 MB) download automatically on first run.
+
+### 3. Database
+
+Create a database called `vehicle_analytics` and run the SQL file in `database/`
+to create the `vehicle_events` table.
+
+Then create a `.env` file in the project root:
+
+```
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=vehicle_analytics
+DB_USER=postgres
+DB_PASSWORD=your_password
+```
+
+### 4. Frontend
+
+```powershell
+cd frontend
+npm install
+```
+
+### 5. Video
+
+Put a traffic video at `videos/traffic.mp4`.
+
+## Running
+
+Use a separate terminal for each step, in this order.
+
+**1. MediaMTX**
+
+```powershell
+mediamtx\mediamtx.exe
+```
+
+**2. Stream the video (loops forever)**
+
+```powershell
+ffmpeg -re -stream_loop -1 -i videos/traffic.mp4 -an -c:v libx264 -preset veryfast -tune zerolatency -g 60 -pix_fmt yuv420p -rtsp_transport tcp -f rtsp rtsp://localhost:8554/traffic
+```
+
+The video is re-encoded without audio, because MediaMTX rejected the original
+audio track (`400 Bad Request`).
+
+**3. Pipeline** (with venv active)
+
+```powershell
+python pipeline/track_count.py
+```
+
+Press `q` in the video window to stop.
+
+**4. Backend** (with venv active, from the project root)
+
+```powershell
+uvicorn
