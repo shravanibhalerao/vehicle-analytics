@@ -1,79 +1,101 @@
-﻿@'
-# Vehicle Analytics
+﻿# Vehicle Analytics
 
 Real-time vehicle counting and analytics from a traffic video stream.
-The system detects vehicles, tracks them, finds their colour, counts each one
-once when it crosses a virtual line, stores every crossing in PostgreSQL and
-shows live analytics on a React dashboard next to the live video.
 
-![Dashboard](docs/dashboard.png)
+This project detects and tracks vehicles, identifies their approximate colour, counts vehicles when they cross a virtual line, stores crossing events in PostgreSQL, and displays live analytics on a React dashboard.
 
+![Vehicle Analytics Dashboard](./docs/dashboard.png)
 ## Features
 
-- Vehicle detection with **YOLOv8n** (car, motorcycle, bus, truck)
-- Multi-object tracking with **ByteTrack** (each vehicle gets a stable ID)
-- Line-crossing counter with direction (**up / down**), no double counting
-- Vehicle colour from a secondary classifier (**CLIP** zero-shot on the cropped
-  bounding box), with a majority vote over several frames per vehicle
-- Every crossing saved to **PostgreSQL**
-- **FastAPI** backend with analytics endpoints
-- **React** dashboard (Vite + Recharts) with live HLS video, stats, charts and
-  recent events, auto-refreshing every 5 seconds
-- Video served as an RTSP stream with **MediaMTX** (also exposed as HLS for the browser)
+- Vehicle detection using **YOLOv8n** (car, motorcycle, bus, truck)
+- Multi-object tracking using **ByteTrack**
+- Unique vehicle IDs for tracking
+- Line-crossing vehicle counting with **Up / Down** direction
+- Vehicle colour classification using **CLIP**
+- Majority voting over multiple frames for colour prediction
+- PostgreSQL database for storing vehicle events
+- FastAPI backend with analytics endpoints
+- React dashboard with live HLS video, statistics and charts
+- Automatic dashboard refresh every 5 seconds
+- Live video streaming using MediaMTX and FFmpeg
 
 ## Architecture
 
+```text
+Traffic Video
+     |
+     v
+   FFmpeg
+     |
+     v
+  MediaMTX
+     |
+     +---------------------> React Dashboard
+     |                         (Live Video)
+     |
+     v
+Vehicle Detection Pipeline
+     |
+     +-- YOLOv8n Detection
+     |
+     +-- ByteTrack Tracking
+     |
+     +-- CLIP Colour Detection
+     |
+     +-- Line Crossing Counter
+     |
+     v
+  PostgreSQL
+     |
+     v
+   FastAPI
+     |
+     v
+React Dashboard
+(Analytics and Statistics)
 ```
-traffic.mp4 --ffmpeg--> MediaMTX (RTSP :8554 / HLS :8888)
-                              |                    |
-                              v                    v
-              pipeline (YOLOv8n + ByteTrack     React dashboard
-                        + CLIP colour)          (live video)
-                              |                    ^
-                              v                    |
-                         PostgreSQL  -------->  FastAPI (:8000)
-                       (vehicle_events)
-```
 
-## Tech stack
+## Technology Stack
 
-| Part        | Tools                                    |
-|-------------|------------------------------------------|
-| Detection   | Ultralytics YOLOv8n                      |
-| Tracking    | ByteTrack (built into Ultralytics)       |
-| Colour      | OpenAI CLIP (`openai/clip-vit-base-patch32`) via Hugging Face Transformers |
-| Streaming   | MediaMTX, FFmpeg                         |
-| Database    | PostgreSQL, psycopg2                     |
-| Backend     | FastAPI, Uvicorn                         |
-| Frontend    | React (Vite), Recharts, hls.js           |
+| Component | Technology |
+|---|---|
+| Vehicle Detection | YOLOv8n |
+| Object Tracking | ByteTrack |
+| Colour Classification | OpenAI CLIP |
+| Backend | FastAPI, Python |
+| Database | PostgreSQL |
+| Frontend | React, Vite |
+| Charts | Recharts |
+| Video Streaming | MediaMTX, FFmpeg |
+| Video Playback | HLS.js |
 
-## Project structure
+## Project Structure
 
-```
+```text
 vehicle-analytics/
-â”œâ”€â”€ backend/        FastAPI app (main.py)
-â”œâ”€â”€ database/       SQL for the vehicle_events table
-â”œâ”€â”€ docs/           Screenshots
-â”œâ”€â”€ frontend/       React dashboard (Vite)
-â”œâ”€â”€ mediamtx/       MediaMTX config (binary not committed)
-â”œâ”€â”€ pipeline/       Detection, tracking, colour, counting
-â”œâ”€â”€ scripts/        Helper scripts
-â”œâ”€â”€ videos/         Input video (not committed)
-â”œâ”€â”€ requirements.txt
-â””â”€â”€ .env            Database settings (not committed)
+├── backend/          FastAPI application
+├── database/         SQL database scripts
+├── docs/             Project screenshots
+├── frontend/         React dashboard
+├── mediamtx/         MediaMTX configuration
+├── pipeline/         Detection, tracking and counting
+├── scripts/          Helper scripts
+├── videos/           Input traffic video
+├── requirements.txt
+└── .env              Database configuration
 ```
 
-## Setup
+## Installation and Setup
 
 ### 1. Requirements
 
 - Python 3.10+
 - Node.js 18+
 - PostgreSQL
-- FFmpeg (on PATH)
-- MediaMTX (download the Windows binary and put `mediamtx.exe` in `mediamtx/`)
+- FFmpeg
+- MediaMTX
 
-### 2. Python environment
+### 2. Python Environment
 
 ```powershell
 python -m venv venv
@@ -81,16 +103,15 @@ venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
-The YOLOv8n weights and the CLIP model (~600 MB) download automatically on first run.
+### 3. Database Configuration
 
-### 3. Database
+Create a PostgreSQL database named `vehicle_analytics`.
 
-Create a database called `vehicle_analytics` and run the SQL file in `database/`
-to create the `vehicle_events` table.
+Run the SQL script inside the `database/` folder.
 
-Then create a `.env` file in the project root:
+Create a `.env` file in the project root:
 
-```
+```env
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=vehicle_analytics
@@ -98,126 +119,179 @@ DB_USER=postgres
 DB_PASSWORD=your_password
 ```
 
-### 4. Frontend
+### 4. Frontend Installation
 
 ```powershell
 cd frontend
 npm install
 ```
 
-### 5. Video
+### 5. Input Video
 
-Put a traffic video at `videos/traffic.mp4`.
+Place the traffic video inside the `videos/` folder with the filename:
 
-## Running
+```text
+traffic.mp4
+```
 
-Use a separate terminal for each step, in this order.
+## Running the Project
 
-**1. MediaMTX**
+Run each component in a separate terminal.
+
+### 1. Start MediaMTX
 
 ```powershell
 mediamtx\mediamtx.exe
 ```
 
-**2. Stream the video (loops forever)**
+### 2. Start FFmpeg Video Stream
 
 ```powershell
 ffmpeg -re -stream_loop -1 -i videos/traffic.mp4 -an -c:v libx264 -preset veryfast -tune zerolatency -g 60 -pix_fmt yuv420p -rtsp_transport tcp -f rtsp rtsp://localhost:8554/traffic
-```
 
-The video is re-encoded without audio, because MediaMTX rejected the original
-audio track (`400 Bad Request`).
+3. Start Vehicle Detection Pipeline
 
-**3. Pipeline** (with venv active)
+Activate the Python virtual environment and run:
 
-```powershell
 python pipeline/track_count.py
-```
 
-Press `q` in the video window to stop.
+The pipeline displays vehicle detection boxes, tracking IDs, colour labels and counting information in its OpenCV window.
 
-**4. Backend** (with venv active, from the project root)
+Press q to stop the pipeline.
 
-```powershell
+4. Start FastAPI Backend
+
+From the project root:
+
 uvicorn backend.main:app --reload --port 8000
-```
 
-API docs: http://localhost:8000/docs
+API documentation:
 
-**5. Dashboard**
+http://localhost:8000/docs
 
-```powershell
+5. Start React Dashboard
+
 cd frontend
 npm run dev
-```
 
-Open http://localhost:5173
+Open:
 
-## API
+http://localhost:5173
 
-| Method | Endpoint                          | Description                            |
-|--------|-----------------------------------|----------------------------------------|
-| GET    | `/api/total`                      | Total vehicles counted                 |
-| GET    | `/api/stats/types`                | Count per vehicle type                 |
-| GET    | `/api/stats/colors`               | Count per vehicle colour               |
-| GET    | `/api/events/recent?limit=20`     | Latest crossing events                 |
-| GET    | `/api/analytics/history?hours=24` | Vehicles per hour for the last N hours |
+API Endpoints
 
-## Database table: `vehicle_events`
+Method
 
-| Column          | Meaning                                    |
-|-----------------|--------------------------------------------|
-| `id`            | Row id                                     |
-| `vehicle_id`    | ByteTrack ID of the vehicle                |
-| `vehicle_type`  | car / motorcycle / bus / truck             |
-| `vehicle_color` | black / white / silver / grey / red / blue |
-| `direction`     | up / down                                  |
-| `timestamp`     | Time the vehicle crossed the line          |
+Endpoint
 
-## How it works
+Description
 
-1. **Detect**: YOLOv8n finds vehicles in each frame (confidence >= 0.35).
-2. **Track**: ByteTrack links detections across frames so each vehicle keeps one ID.
-3. **Colour**: every 12 frames per vehicle, the cropped box is sent to CLIP with
-   prompts like "a photo of a black car". The latest 7 guesses are kept and the
-   most common one is used.
-4. **Count**: a horizontal line sits at 60% of the frame height. When a vehicle's
-   centre moves across it, the vehicle is counted once with its direction.
-5. **Store and serve**: each crossing is written to PostgreSQL, FastAPI reads it,
-   and the dashboard polls the API every 5 seconds.
+GET
 
-## Troubleshooting
+/api/total
 
-| Problem | Fix |
-|---|---|
-| `mediamtx.exe is not recognized` | PowerShell needs a path: run `.\mediamtx.exe` or `mediamtx\mediamtx.exe` |
-| ffmpeg: `400 Bad Request` | Use the re-encode command above (no audio, `libx264`, `-rtsp_transport tcp`) |
-| Dashboard: "Stream nahi mila" | MediaMTX or ffmpeg is not running |
-| Dashboard: "Backend se data nahi aaya" | Uvicorn is not running |
-| `Missing script: dev` | Run `npm run dev` inside the `frontend` folder |
+Total vehicles counted
 
-## Known limitations
+GET
 
-- **Colour is approximate.** An HSV colour method was tried first, but the video's
-  blue tint, glare and crowding made it unreliable, so CLIP is used instead.
-  CLIP is better but still makes mistakes on small or partly hidden vehicles.
-- **Motorcycles often come out as "black"**, because the rider's dark clothes and
-  helmet fill most of the crop.
-- **CPU speed**: about 3 to 8 FPS on a laptop CPU because of CLIP. A GPU would be
-  much faster.
-- **Crowded scenes**: vehicles hidden behind others can lose their tracking ID,
-  which can cause a missed or double count.
-- **Single counting line**, tuned for this video's camera angle. A different
-  camera may need a new line position.
+/api/stats/types
 
-## Screenshots
+Vehicle count by type
 
-| Dashboard | Pipeline |
-|-----------|----------|
-| ![Dashboard](docs/dashboard.png) | ![Pipeline](docs/pipeline.png) |
+GET
 
-| Stream test | API docs |
-|-------------|----------|
-| ![Stream](docs/stream-test.png) | ![API docs](docs/api-docs.png) |
-The dashboard shows the raw live stream. The annotated view (boxes, track IDs,
-colour, counts) is shown in the pipeline's own window (see the Pipeline screenshot).
+/api/stats/colors
+
+Vehicle count by colour
+
+GET
+
+/api/events/recent?limit=20
+
+Recent crossing events
+
+GET
+
+/api/analytics/history?hours=24
+
+Hourly vehicle analytics
+
+Database: vehicle_events
+
+Column
+
+Description
+
+id
+
+Unique row ID
+
+vehicle_id
+
+ByteTrack vehicle ID
+
+vehicle_type
+
+Car, motorcycle, bus or truck
+
+vehicle_color
+
+Detected vehicle colour
+
+direction
+
+Up or Down
+
+timestamp
+
+Vehicle crossing time
+
+How the System Works
+
+Detection: YOLOv8n detects vehicles in each video frame.
+
+Tracking: ByteTrack assigns and maintains vehicle IDs across frames.
+
+Colour Classification: CLIP predicts the approximate vehicle colour using cropped vehicle images.
+
+Counting: A virtual horizontal line counts vehicles when their centre crosses it.
+
+Database Storage: Crossing events are stored in PostgreSQL.
+
+Analytics: FastAPI provides data to the React dashboard.
+
+Visualization: The dashboard displays statistics, charts and live video.
+
+Screenshots
+
+Dashboard
+
+
+
+Vehicle Detection and Tracking Pipeline
+
+
+
+Stream Test
+
+
+
+API Documentation
+
+
+
+Known Limitations
+
+Vehicle colour classification is approximate and may make mistakes.
+
+Motorcycles may be classified as black because of dark clothing and helmets.
+
+CLIP processing can reduce FPS on CPU-based systems.
+
+Crowded scenes may cause tracking ID loss.
+
+The counting line is configured for the current camera angle.
+
+Conclusion
+
+The Vehicle Analytics system combines computer vision, object tracking, video streaming, database management and web technologies to provide real-time vehicle monitoring and analytics.
