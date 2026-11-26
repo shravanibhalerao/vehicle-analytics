@@ -1,434 +1,62 @@
-From: <Saved by Blink>
-Snapshot-Content-Location: http://localhost:5173/
-Subject: frontend-app
-Date: Thu, 26 Nov 2026 13:11:49 GMT
-MIME-Version: 1.0
-Content-Type: multipart/related;
-	type="text/html";
-	boundary="----MultipartBoundary--mUPDl1zkjRgMavfVmW6zlejM6FBgPnka6UtPwy9xLX----"
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
 
+    <script type="module" src="./dashboard_files/client"></script>
 
-------MultipartBoundary--mUPDl1zkjRgMavfVmW6zlejM6FBgPnka6UtPwy9xLX----
-Content-Type: text/html
-Content-ID: <frame-88F7AF52416A07F0B01535BBBC082706@mhtml.blink>
-Content-Transfer-Encoding: quoted-printable
-Content-Location: http://localhost:5173/
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontend</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/shrav/Documents/vehicle-analytics/frontend/src/index.css">* { box-sizing: border-box; margin: 0; padding: 0; }
 
-<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
-ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
-css" href=3D"cid:css-2bc2b65a-71fd-4953-a14a-9dfcf0fa7f08@mhtml.blink" /><l=
-ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-5d1790ec-d110-4dda=
--ba94-6f6a31195474@mhtml.blink" />
-   =20
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #0f1419;
+  color: #e6e6e6;
+  min-height: 100vh;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/shrav/Documents/vehicle-analytics/frontend/src/App.css">.app { max-width: 1300px; margin: 0 auto; padding: 20px; }
 
-   =20
+.header { display: flex; justify-content: space-between; align-items: baseline;
+          margin-bottom: 20px; flex-wrap: wrap; gap: 8px; }
+.header h1 { font-size: 24px; }
+.updated { color: #8a96a3; font-size: 13px; }
 
-   =20
-    <link rel=3D"icon" type=3D"image/svg+xml" href=3D"http://localhost:5173=
-/favicon.svg">
-    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
-=3D1.0">
-    <title>frontend-app</title>
-  </head>
+.error { background: #4a1c1c; color: #ffb4b4; padding: 10px 14px;
+         border-radius: 8px; margin-bottom: 16px; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+         gap: 12px; margin-bottom: 20px; }
+.stat { background: #1a2029; border-radius: 10px; padding: 14px; }
+.stat .label { color: #8a96a3; font-size: 13px; text-transform: capitalize; }
+.stat .value { font-size: 28px; font-weight: 600; margin-top: 4px; }
+.stat.main { background: #1e3a5f; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.card { background: #1a2029; border-radius: 10px; padding: 16px; min-width: 0; }
+.card h2 { font-size: 16px; margin-bottom: 12px; color: #cfd8e3; }
+.wide { grid-column: 1 / -1; }
+
+.video-box { position: relative; background: #000; border-radius: 8px; overflow: hidden; }
+.video-box video { width: 100%; display: block; }
+.video-error { position: absolute; inset: 0; display: flex; align-items: center;
+               justify-content: center; color: #ffb4b4; padding: 20px; text-align: center; }
+
+.empty { color: #8a96a3; padding: 20px 0; text-align: center; }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #2a323d; }
+th { color: #8a96a3; font-weight: 500; }
+td { text-transform: capitalize; }
+
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }</style></head>
   <body>
-    <div id=3D"root"><div class=3D"app"><div class=3D"header"><h1>=F0=9F=9A=
-=A6 Real-Time Vehicle Analytics</h1><div class=3D"status"><span class=3D"do=
-t"></span>API connected =C2=B7 updated 6:41:45 PM</div></div><div class=3D"=
-grid-cards"><div class=3D"card total"><div class=3D"label">Total Vehicles</=
-div><div class=3D"value">27</div></div><div class=3D"card"><div class=3D"la=
-bel">Cars</div><div class=3D"value">6</div></div><div class=3D"card"><div c=
-lass=3D"label">Buses</div><div class=3D"value">1</div></div><div class=3D"c=
-ard"><div class=3D"label">Trucks</div><div class=3D"value">1</div></div><di=
-v class=3D"card"><div class=3D"label">Motorcycles</div><div class=3D"value"=
->19</div></div></div><div class=3D"grid-main"><div class=3D"card panel"><h2=
->Vehicle Colour Distribution</h2><div class=3D"chart-box"><div class=3D"rec=
-harts-responsive-container" style=3D"width: 100%; height: 100%; min-width: =
-0px;"><div style=3D"width: 0px; height: 0px; overflow: visible;"><div width=
-=3D"343" height=3D"260" class=3D"recharts-wrapper" style=3D"position: relat=
-ive; cursor: default; width: 343px; height: 260px;"><div xmlns=3D"http://ww=
-w.w3.org/1999/xhtml" tabindex=3D"-1" class=3D"recharts-tooltip-wrapper rech=
-arts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom" style=3D"visibi=
-lity: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px=
-; transform: translate(313.875px, 81px);"><div class=3D"recharts-default-to=
-oltip" role=3D"status" aria-live=3D"assertive" style=3D"margin: 0px; paddin=
-g: 10px; background: rgb(19, 28, 46); border: 1px solid rgb(31, 43, 68); wh=
-ite-space: nowrap;"><p class=3D"recharts-tooltip-label" style=3D"margin: 0p=
-x;"></p></div></div><svg role=3D"application" tabindex=3D"0" class=3D"recha=
-rts-surface" width=3D"343" height=3D"260" viewBox=3D"0 0 343 260" style=3D"=
-width: 100%; height: 100%; display: block;"><title></title><desc></desc><g =
-tabindex=3D"-1" class=3D"recharts-zIndex-layer_-100" style=3D"outline: none=
-;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_-50" style=3D"outl=
-ine: none;"></g><defs><clipPath id=3D"recharts1-clip"><rect x=3D"65" y=3D"5=
-" height=3D"220" width=3D"273"></rect></clipPath></defs><g tabindex=3D"-1" =
-class=3D"recharts-zIndex-layer_100" style=3D"outline: none;"></g><g tabinde=
-x=3D"-1" class=3D"recharts-zIndex-layer_200" style=3D"outline: none;"></g><=
-g tabindex=3D"-1" class=3D"recharts-zIndex-layer_300" style=3D"outline: non=
-e;"><g class=3D"recharts-layer recharts-bar" id=3D"recharts-bar-_r_0_"><g c=
-lass=3D"recharts-layer recharts-bar-rectangles"><g class=3D"recharts-layer"=
-><g class=3D"recharts-layer recharts-bar-rectangle"><g class=3D"recharts-la=
-yer recharts-inactive-bar"><path fill=3D"#111111" x=3D"71.825" y=3D"5" widt=
-h=3D"55" height=3D"220" stroke=3D"#555" class=3D"recharts-rectangle" d=3D"M=
-71.825,11A 6,6,0,0,1,77.825,5L 120.825,5A 6,6,0,0,1,
-        126.825,11L 126.825,225L 71.825,225Z"></path></g></g><g class=3D"re=
-charts-layer recharts-bar-rectangle"><g class=3D"recharts-layer recharts-in=
-active-bar"><path fill=3D"#f1f1f1" x=3D"140.075" y=3D"170" width=3D"55" hei=
-ght=3D"55" stroke=3D"#555" class=3D"recharts-rectangle" d=3D"M140.075,176A =
-6,6,0,0,1,146.075,170L 189.075,170A 6,6,0,0,1,
-        195.075,176L 195.075,225L 140.075,225Z"></path></g></g><g class=3D"=
-recharts-layer recharts-bar-rectangle"><g class=3D"recharts-layer recharts-=
-inactive-bar"><path fill=3D"#c0c0c0" x=3D"208.325" y=3D"214" width=3D"55" h=
-eight=3D"11" stroke=3D"#555" class=3D"recharts-rectangle" d=3D"M208.325,219=
-.5A 5.5,5.5,0,0,1,213.825,214L 257.825,214A 5.5,5.5,0,0,1,
-        263.325,219.5L 263.325,225L 208.325,225Z"></path></g></g><g class=
-=3D"recharts-layer recharts-bar-rectangle"><g class=3D"recharts-layer recha=
-rts-inactive-bar"><path fill=3D"#808080" x=3D"276.575" y=3D"214" width=3D"5=
-5" height=3D"11" stroke=3D"#555" class=3D"recharts-rectangle" d=3D"M276.575=
-,219.5A 5.5,5.5,0,0,1,282.075,214L 326.075,214A 5.5,5.5,0,0,1,
-        331.575,219.5L 331.575,225L 276.575,225Z"></path></g></g></g></g></=
-g></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_400" style=3D"outli=
-ne: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_500" style=
-=3D"outline: none;"><g class=3D"recharts-layer recharts-cartesian-axis rech=
-arts-xAxis xAxis"><line stroke=3D"#8b98ad" angle=3D"0" height=3D"30" orient=
-ation=3D"bottom" x=3D"65" y=3D"225" width=3D"273" class=3D"recharts-cartesi=
-an-axis-line" fill=3D"none" x1=3D"65" y1=3D"225" x2=3D"338" y2=3D"225"></li=
-ne><g class=3D"recharts-cartesian-axis-ticks recharts-xAxis-ticks"><g class=
-=3D"recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines"><g class=
-=3D"recharts-layer recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad" a=
-ngle=3D"0" height=3D"30" orientation=3D"bottom" x=3D"65" y=3D"225" width=3D=
-"273" class=3D"recharts-cartesian-axis-tick-line" fill=3D"none" x1=3D"99.12=
-5" y1=3D"231" x2=3D"99.125" y2=3D"225"></line></g><g class=3D"recharts-laye=
-r recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" height=
-=3D"30" orientation=3D"bottom" x=3D"65" y=3D"225" width=3D"273" class=3D"re=
-charts-cartesian-axis-tick-line" fill=3D"none" x1=3D"167.375" y1=3D"231" x2=
-=3D"167.375" y2=3D"225"></line></g><g class=3D"recharts-layer recharts-cart=
-esian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" height=3D"30" orienta=
-tion=3D"bottom" x=3D"65" y=3D"225" width=3D"273" class=3D"recharts-cartesia=
-n-axis-tick-line" fill=3D"none" x1=3D"235.625" y1=3D"231" x2=3D"235.625" y2=
-=3D"225"></line></g><g class=3D"recharts-layer recharts-cartesian-axis-tick=
-"><line stroke=3D"#8b98ad" angle=3D"0" height=3D"30" orientation=3D"bottom"=
- x=3D"65" y=3D"225" width=3D"273" class=3D"recharts-cartesian-axis-tick-lin=
-e" fill=3D"none" x1=3D"303.875" y1=3D"231" x2=3D"303.875" y2=3D"225"></line=
-></g></g></g></g><g class=3D"recharts-layer recharts-cartesian-axis rechart=
-s-yAxis yAxis"><line stroke=3D"#8b98ad" angle=3D"0" orientation=3D"left" wi=
-dth=3D"60" x=3D"5" y=3D"5" height=3D"220" class=3D"recharts-cartesian-axis-=
-line" fill=3D"none" x1=3D"65" y1=3D"5" x2=3D"65" y2=3D"225"></line><g class=
-=3D"recharts-cartesian-axis-ticks recharts-yAxis-ticks"><g class=3D"rechart=
-s-cartesian-axis-tick-lines recharts-yAxis-tick-lines"><g class=3D"recharts=
--layer recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" o=
-rientation=3D"left" width=3D"60" x=3D"5" y=3D"5" height=3D"220" class=3D"re=
-charts-cartesian-axis-tick-line" fill=3D"none" x1=3D"59" y1=3D"225" x2=3D"6=
-5" y2=3D"225"></line></g><g class=3D"recharts-layer recharts-cartesian-axis=
--tick"><line stroke=3D"#8b98ad" angle=3D"0" orientation=3D"left" width=3D"6=
-0" x=3D"5" y=3D"5" height=3D"220" class=3D"recharts-cartesian-axis-tick-lin=
-e" fill=3D"none" x1=3D"59" y1=3D"170" x2=3D"65" y2=3D"170"></line></g><g cl=
-ass=3D"recharts-layer recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad=
-" angle=3D"0" orientation=3D"left" width=3D"60" x=3D"5" y=3D"5" height=3D"2=
-20" class=3D"recharts-cartesian-axis-tick-line" fill=3D"none" x1=3D"59" y1=
-=3D"115" x2=3D"65" y2=3D"115"></line></g><g class=3D"recharts-layer rechart=
-s-cartesian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" orientation=3D"=
-left" width=3D"60" x=3D"5" y=3D"5" height=3D"220" class=3D"recharts-cartesi=
-an-axis-tick-line" fill=3D"none" x1=3D"59" y1=3D"60" x2=3D"65" y2=3D"60"></=
-line></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><line str=
-oke=3D"#8b98ad" angle=3D"0" orientation=3D"left" width=3D"60" x=3D"5" y=3D"=
-5" height=3D"220" class=3D"recharts-cartesian-axis-tick-line" fill=3D"none"=
- x1=3D"59" y1=3D"5" x2=3D"65" y2=3D"5"></line></g></g></g></g></g><g tabind=
-ex=3D"-1" class=3D"recharts-zIndex-layer_600" style=3D"outline: none;"></g>=
-<g tabindex=3D"-1" class=3D"recharts-zIndex-layer_1000" style=3D"outline: n=
-one;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_1100" style=3D"=
-outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_1200"=
- style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-l=
-ayer_1900" style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"rechart=
-s-zIndex-layer_2000" style=3D"outline: none;"><g class=3D"recharts-cartesia=
-n-axis-tick-labels recharts-xAxis-tick-labels"><g class=3D"recharts-layer r=
-echarts-cartesian-axis-tick-label"><text stroke=3D"none" height=3D"30" orie=
-ntation=3D"bottom" width=3D"273" fill=3D"#8b98ad" x=3D"99.125" y=3D"233" cl=
-ass=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D"mid=
-dle" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"99.125" dy=3D"0.71em">=
-black</tspan></text></g><g class=3D"recharts-layer recharts-cartesian-axis-=
-tick-label"><text stroke=3D"none" height=3D"30" orientation=3D"bottom" widt=
-h=3D"273" fill=3D"#8b98ad" x=3D"167.375" y=3D"233" class=3D"recharts-text r=
-echarts-cartesian-axis-tick-value" text-anchor=3D"middle" style=3D"fill: rg=
-b(139, 152, 173);"><tspan x=3D"167.375" dy=3D"0.71em">white</tspan></text><=
-/g><g class=3D"recharts-layer recharts-cartesian-axis-tick-label"><text str=
-oke=3D"none" height=3D"30" orientation=3D"bottom" width=3D"273" fill=3D"#8b=
-98ad" x=3D"235.625" y=3D"233" class=3D"recharts-text recharts-cartesian-axi=
-s-tick-value" text-anchor=3D"middle" style=3D"fill: rgb(139, 152, 173);"><t=
-span x=3D"235.625" dy=3D"0.71em">silver</tspan></text></g><g class=3D"recha=
-rts-layer recharts-cartesian-axis-tick-label"><text stroke=3D"none" height=
-=3D"30" orientation=3D"bottom" width=3D"273" fill=3D"#8b98ad" x=3D"303.875"=
- y=3D"233" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-=
-anchor=3D"middle" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"303.875" =
-dy=3D"0.71em">grey</tspan></text></g></g><g class=3D"recharts-cartesian-axi=
-s-tick-labels recharts-yAxis-tick-labels"><g class=3D"recharts-layer rechar=
-ts-cartesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" wi=
-dth=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"225" class=3D"rech=
-arts-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" style=3D"=
-fill: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">0</tspan></text><=
-/g><g class=3D"recharts-layer recharts-cartesian-axis-tick-label"><text str=
-oke=3D"none" orientation=3D"left" width=3D"60" height=3D"220" fill=3D"#8b98=
-ad" x=3D"57" y=3D"170" class=3D"recharts-text recharts-cartesian-axis-tick-=
-value" text-anchor=3D"end" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"=
-57" dy=3D"0.355em">5</tspan></text></g><g class=3D"recharts-layer recharts-=
-cartesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" width=
-=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"115" class=3D"rechart=
-s-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" style=3D"fil=
-l: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">10</tspan></text></g=
-><g class=3D"recharts-layer recharts-cartesian-axis-tick-label"><text strok=
-e=3D"none" orientation=3D"left" width=3D"60" height=3D"220" fill=3D"#8b98ad=
-" x=3D"57" y=3D"60" class=3D"recharts-text recharts-cartesian-axis-tick-val=
-ue" text-anchor=3D"end" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"57"=
- dy=3D"0.355em">15</tspan></text></g><g class=3D"recharts-layer recharts-ca=
-rtesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" width=
-=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"10.654205322265625" c=
-lass=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D"en=
-d" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">20</t=
-span></text></g></g></g></svg></div></div></div></div></div><div class=3D"c=
-ard panel"><h2>Vehicles per Hour (last 24h)</h2><div class=3D"chart-box"><d=
-iv class=3D"recharts-responsive-container" style=3D"width: 100%; height: 10=
-0%; min-width: 0px;"><div style=3D"width: 0px; height: 0px; overflow: visib=
-le;"><div width=3D"343" height=3D"260" class=3D"recharts-wrapper" style=3D"=
-position: relative; cursor: default; width: 343px; height: 260px;"><div xml=
-ns=3D"http://www.w3.org/1999/xhtml" tabindex=3D"-1" class=3D"recharts-toolt=
-ip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-top" sty=
-le=3D"visibility: hidden; pointer-events: none; position: absolute; top: 0p=
-x; left: 0px; transform: translate(211.5px, 176.78px);"><div class=3D"recha=
-rts-default-tooltip" role=3D"status" aria-live=3D"assertive" style=3D"margi=
-n: 0px; padding: 10px; background: rgb(19, 28, 46); border: 1px solid rgb(3=
-1, 43, 68); white-space: nowrap;"><p class=3D"recharts-tooltip-label" style=
-=3D"margin: 0px;"></p></div></div><svg role=3D"application" tabindex=3D"0" =
-class=3D"recharts-surface" width=3D"343" height=3D"260" viewBox=3D"0 0 343 =
-260" style=3D"width: 100%; height: 100%; display: block;"><title></title><d=
-esc></desc><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_-100" style=3D=
-"outline: none;"><g class=3D"recharts-cartesian-grid"><g class=3D"recharts-=
-cartesian-grid-horizontal"><line stroke=3D"#1f2b44" fill=3D"none" x=3D"65" =
-y=3D"5" width=3D"273" height=3D"220" x1=3D"65" y1=3D"225" x2=3D"338" y2=3D"=
-225"></line><line stroke=3D"#1f2b44" fill=3D"none" x=3D"65" y=3D"5" width=
-=3D"273" height=3D"220" x1=3D"65" y1=3D"170" x2=3D"338" y2=3D"170"></line><=
-line stroke=3D"#1f2b44" fill=3D"none" x=3D"65" y=3D"5" width=3D"273" height=
-=3D"220" x1=3D"65" y1=3D"115" x2=3D"338" y2=3D"115"></line><line stroke=3D"=
-#1f2b44" fill=3D"none" x=3D"65" y=3D"5" width=3D"273" height=3D"220" x1=3D"=
-65" y1=3D"60" x2=3D"338" y2=3D"60"></line><line stroke=3D"#1f2b44" fill=3D"=
-none" x=3D"65" y=3D"5" width=3D"273" height=3D"220" x1=3D"65" y1=3D"5" x2=
-=3D"338" y2=3D"5"></line></g><g class=3D"recharts-cartesian-grid-vertical">=
-<line stroke=3D"#1f2b44" fill=3D"none" x=3D"65" y=3D"5" width=3D"273" heigh=
-t=3D"220" x1=3D"201.5" y1=3D"5" x2=3D"201.5" y2=3D"225"></line><line stroke=
-=3D"#1f2b44" fill=3D"none" x=3D"65" y=3D"5" width=3D"273" height=3D"220" x1=
-=3D"65" y1=3D"5" x2=3D"65" y2=3D"225"></line><line stroke=3D"#1f2b44" fill=
-=3D"none" x=3D"65" y=3D"5" width=3D"273" height=3D"220" x1=3D"338" y1=3D"5"=
- x2=3D"338" y2=3D"225"></line></g></g></g><g tabindex=3D"-1" class=3D"recha=
-rts-zIndex-layer_-50" style=3D"outline: none;"></g><defs><clipPath id=3D"re=
-charts3-clip"><rect x=3D"65" y=3D"5" height=3D"220" width=3D"273"></rect></=
-clipPath></defs><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_100" styl=
-e=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_=
-200" style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zInd=
-ex-layer_300" style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"rech=
-arts-zIndex-layer_400" style=3D"outline: none;"><g class=3D"recharts-layer =
-recharts-line"></g></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_50=
-0" style=3D"outline: none;"><g class=3D"recharts-layer recharts-cartesian-a=
-xis recharts-xAxis xAxis"><line stroke=3D"#8b98ad" angle=3D"0" height=3D"30=
-" orientation=3D"bottom" x=3D"65" y=3D"225" width=3D"273" class=3D"recharts=
--cartesian-axis-line" fill=3D"none" x1=3D"65" y1=3D"225" x2=3D"338" y2=3D"2=
-25"></line><g class=3D"recharts-cartesian-axis-ticks recharts-xAxis-ticks">=
-<g class=3D"recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines"><=
-g class=3D"recharts-layer recharts-cartesian-axis-tick"><line stroke=3D"#8b=
-98ad" angle=3D"0" height=3D"30" orientation=3D"bottom" x=3D"65" y=3D"225" w=
-idth=3D"273" class=3D"recharts-cartesian-axis-tick-line" fill=3D"none" x1=
-=3D"201.5" y1=3D"231" x2=3D"201.5" y2=3D"225"></line></g></g></g></g><g cla=
-ss=3D"recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><line st=
-roke=3D"#8b98ad" angle=3D"0" orientation=3D"left" width=3D"60" x=3D"5" y=3D=
-"5" height=3D"220" class=3D"recharts-cartesian-axis-line" fill=3D"none" x1=
-=3D"65" y1=3D"5" x2=3D"65" y2=3D"225"></line><g class=3D"recharts-cartesian=
--axis-ticks recharts-yAxis-ticks"><g class=3D"recharts-cartesian-axis-tick-=
-lines recharts-yAxis-tick-lines"><g class=3D"recharts-layer recharts-cartes=
-ian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" orientation=3D"left" wi=
-dth=3D"60" x=3D"5" y=3D"5" height=3D"220" class=3D"recharts-cartesian-axis-=
-tick-line" fill=3D"none" x1=3D"59" y1=3D"225" x2=3D"65" y2=3D"225"></line><=
-/g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><line stroke=3D=
-"#8b98ad" angle=3D"0" orientation=3D"left" width=3D"60" x=3D"5" y=3D"5" hei=
-ght=3D"220" class=3D"recharts-cartesian-axis-tick-line" fill=3D"none" x1=3D=
-"59" y1=3D"170" x2=3D"65" y2=3D"170"></line></g><g class=3D"recharts-layer =
-recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" orientat=
-ion=3D"left" width=3D"60" x=3D"5" y=3D"5" height=3D"220" class=3D"recharts-=
-cartesian-axis-tick-line" fill=3D"none" x1=3D"59" y1=3D"115" x2=3D"65" y2=
-=3D"115"></line></g><g class=3D"recharts-layer recharts-cartesian-axis-tick=
-"><line stroke=3D"#8b98ad" angle=3D"0" orientation=3D"left" width=3D"60" x=
-=3D"5" y=3D"5" height=3D"220" class=3D"recharts-cartesian-axis-tick-line" f=
-ill=3D"none" x1=3D"59" y1=3D"60" x2=3D"65" y2=3D"60"></line></g><g class=3D=
-"recharts-layer recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad" angl=
-e=3D"0" orientation=3D"left" width=3D"60" x=3D"5" y=3D"5" height=3D"220" cl=
-ass=3D"recharts-cartesian-axis-tick-line" fill=3D"none" x1=3D"59" y1=3D"5" =
-x2=3D"65" y2=3D"5"></line></g></g></g></g></g><g tabindex=3D"-1" class=3D"r=
-echarts-zIndex-layer_600" style=3D"outline: none;"><g class=3D"recharts-lay=
-er recharts-line-dots"><circle r=3D"3" stroke=3D"#2f6bff" stroke-width=3D"2=
-" fill=3D"#fff" fill-opacity=3D"1" height=3D"220" width=3D"273" cx=3D"201.5=
-" cy=3D"12.857142857142854" class=3D"recharts-dot recharts-line-dot"></circ=
-le></g></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_1000" style=3D=
-"outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_1100=
-" style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-=
-layer_1200" style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"rechar=
-ts-zIndex-layer_1900" style=3D"outline: none;"></g><g tabindex=3D"-1" class=
-=3D"recharts-zIndex-layer_2000" style=3D"outline: none;"><g class=3D"rechar=
-ts-cartesian-axis-tick-labels recharts-xAxis-tick-labels"><g class=3D"recha=
-rts-layer recharts-cartesian-axis-tick-label"><text stroke=3D"none" height=
-=3D"30" orientation=3D"bottom" width=3D"273" fill=3D"#8b98ad" x=3D"201.5" y=
-=3D"233" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-an=
-chor=3D"middle" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"201.5" dy=
-=3D"0.71em">06:00 PM</tspan></text></g></g><g class=3D"recharts-cartesian-a=
-xis-tick-labels recharts-yAxis-tick-labels"><g class=3D"recharts-layer rech=
-arts-cartesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" =
-width=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"225" class=3D"re=
-charts-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" style=
-=3D"fill: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">0</tspan></te=
-xt></g><g class=3D"recharts-layer recharts-cartesian-axis-tick-label"><text=
- stroke=3D"none" orientation=3D"left" width=3D"60" height=3D"220" fill=3D"#=
-8b98ad" x=3D"57" y=3D"170" class=3D"recharts-text recharts-cartesian-axis-t=
-ick-value" text-anchor=3D"end" style=3D"fill: rgb(139, 152, 173);"><tspan x=
-=3D"57" dy=3D"0.355em">7</tspan></text></g><g class=3D"recharts-layer recha=
-rts-cartesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" w=
-idth=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"115" class=3D"rec=
-harts-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" style=3D=
-"fill: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">14</tspan></text=
-></g><g class=3D"recharts-layer recharts-cartesian-axis-tick-label"><text s=
-troke=3D"none" orientation=3D"left" width=3D"60" height=3D"220" fill=3D"#8b=
-98ad" x=3D"57" y=3D"60" class=3D"recharts-text recharts-cartesian-axis-tick=
--value" text-anchor=3D"end" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D=
-"57" dy=3D"0.355em">21</tspan></text></g><g class=3D"recharts-layer rechart=
-s-cartesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" wid=
-th=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"10.654205322265625"=
- class=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D"=
-end" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">28<=
-/tspan></text></g></g></g></svg></div></div></div></div></div><div class=3D=
-"card panel"><h2>Live Video</h2><div><video controls=3D"" src=3D"blob:http:=
-//localhost:5173/dd839fcc-74b0-461e-be3b-eee91d541a43" style=3D"width: 100%=
-; height: 260px; background: rgb(0, 0, 0); border-radius: 8px;"></video></d=
-iv></div></div><div class=3D"card panel"><h2>Recent Detection Events</h2><d=
-iv class=3D"table-wrap"><table><thead><tr><th>#</th><th>Vehicle ID</th><th>=
-Type</th><th>Colour</th><th>Direction</th><th>Time</th></tr></thead><tbody>=
-<tr><td>27</td><td>199</td><td>bus</td><td><span class=3D"swatch" style=3D"=
-background: rgb(241, 241, 241);"></span>white</td><td>down</td><td>11/26/20=
-26, 6:10:36 PM</td></tr><tr><td>26</td><td>309</td><td>motorcycle</td><td><=
-span class=3D"swatch" style=3D"background: rgb(17, 17, 17);"></span>black</=
-td><td>down</td><td>11/26/2026, 6:10:34 PM</td></tr><tr><td>25</td><td>259<=
-/td><td>car</td><td><span class=3D"swatch" style=3D"background: rgb(241, 24=
-1, 241);"></span>white</td><td>down</td><td>11/26/2026, 6:10:31 PM</td></tr=
-><tr><td>24</td><td>282</td><td>motorcycle</td><td><span class=3D"swatch" s=
-tyle=3D"background: rgb(17, 17, 17);"></span>black</td><td>down</td><td>11/=
-26/2026, 6:10:30 PM</td></tr><tr><td>23</td><td>297</td><td>motorcycle</td>=
-<td><span class=3D"swatch" style=3D"background: rgb(17, 17, 17);"></span>bl=
-ack</td><td>down</td><td>11/26/2026, 6:10:30 PM</td></tr><tr><td>22</td><td=
->296</td><td>motorcycle</td><td><span class=3D"swatch" style=3D"background:=
- rgb(17, 17, 17);"></span>black</td><td>down</td><td>11/26/2026, 6:10:27 PM=
-</td></tr><tr><td>21</td><td>274</td><td>motorcycle</td><td><span class=3D"=
-swatch" style=3D"background: rgb(17, 17, 17);"></span>black</td><td>down</t=
-d><td>11/26/2026, 6:10:22 PM</td></tr><tr><td>20</td><td>214</td><td>motorc=
-ycle</td><td><span class=3D"swatch" style=3D"background: rgb(17, 17, 17);">=
-</span>black</td><td>down</td><td>11/26/2026, 6:10:21 PM</td></tr><tr><td>1=
-9</td><td>236</td><td>truck</td><td><span class=3D"swatch" style=3D"backgro=
-und: rgb(128, 128, 128);"></span>grey</td><td>down</td><td>11/26/2026, 6:10=
-:17 PM</td></tr><tr><td>18</td><td>239</td><td>car</td><td><span class=3D"s=
-watch" style=3D"background: rgb(241, 241, 241);"></span>white</td><td>down<=
-/td><td>11/26/2026, 6:10:17 PM</td></tr><tr><td>17</td><td>228</td><td>moto=
-rcycle</td><td><span class=3D"swatch" style=3D"background: rgb(17, 17, 17);=
-"></span>black</td><td>down</td><td>11/26/2026, 6:10:14 PM</td></tr><tr><td=
->16</td><td>184</td><td>motorcycle</td><td><span class=3D"swatch" style=3D"=
-background: rgb(17, 17, 17);"></span>black</td><td>down</td><td>11/26/2026,=
- 6:10:05 PM</td></tr><tr><td>15</td><td>115</td><td>car</td><td><span class=
-=3D"swatch" style=3D"background: rgb(17, 17, 17);"></span>black</td><td>dow=
-n</td><td>11/26/2026, 6:10:05 PM</td></tr><tr><td>14</td><td>174</td><td>mo=
-torcycle</td><td><span class=3D"swatch" style=3D"background: rgb(17, 17, 17=
-);"></span>black</td><td>down</td><td>11/26/2026, 6:10:04 PM</td></tr><tr><=
-td>13</td><td>139</td><td>motorcycle</td><td><span class=3D"swatch" style=
-=3D"background: rgb(17, 17, 17);"></span>black</td><td>down</td><td>11/26/2=
-026, 6:10:04 PM</td></tr><tr><td>12</td><td>146</td><td>motorcycle</td><td>=
-<span class=3D"swatch" style=3D"background: rgb(17, 17, 17);"></span>black<=
-/td><td>down</td><td>11/26/2026, 6:10:00 PM</td></tr><tr><td>11</td><td>134=
-</td><td>motorcycle</td><td><span class=3D"swatch" style=3D"background: rgb=
-(17, 17, 17);"></span>black</td><td>down</td><td>11/26/2026, 6:09:57 PM</td=
-></tr><tr><td>10</td><td>25</td><td>car</td><td><span class=3D"swatch" styl=
-e=3D"background: rgb(17, 17, 17);"></span>black</td><td>down</td><td>11/26/=
-2026, 6:09:53 PM</td></tr><tr><td>9</td><td>106</td><td>motorcycle</td><td>=
-<span class=3D"swatch" style=3D"background: rgb(192, 192, 192);"></span>sil=
-ver</td><td>down</td><td>11/26/2026, 6:09:50 PM</td></tr><tr><td>8</td><td>=
-68</td><td>motorcycle</td><td><span class=3D"swatch" style=3D"background: r=
-gb(17, 17, 17);"></span>black</td><td>down</td><td>11/26/2026, 6:09:45 PM</=
-td></tr></tbody></table></div></div></div></div>
-   =20
- =20
+    <div id="root"><div class="app"><header class="header"><h1>Vehicle Analytics Dashboard</h1><span class="updated">Last update: 9:22:15 PM</span></header><section class="stats"><div class="stat main"><div class="label">Total vehicles</div><div class="value">54</div></div><div class="stat"><div class="label">motorcycle</div><div class="value">38</div></div><div class="stat"><div class="label">car</div><div class="value">12</div></div><div class="stat"><div class="label">bus</div><div class="value">2</div></div><div class="stat"><div class="label">truck</div><div class="value">2</div></div></section><section class="grid"><div class="card"><h2>Live stream</h2><div class="video-box"><video autoplay="" playsinline="" controls="" src="blob:http://localhost:5173/d64e669b-e78c-42b0-9dea-d1edca79227a"></video></div></div><div class="card"><h2>Vehicles per hour (last 24h)</h2><div class="recharts-responsive-container" style="width: 100%; height: 260px; min-width: 0px;"><div style="width: 0px; overflow-x: visible;"><div width="590" height="260" class="recharts-wrapper" style="position: relative; cursor: default; width: 590px; height: 260px;"><div xmlns="http://www.w3.org/1999/xhtml" tabindex="-1" class="recharts-tooltip-wrapper recharts-tooltip-wrapper-left recharts-tooltip-wrapper-top" style="visibility: visible; pointer-events: none; position: absolute; top: 0px; left: 0px; transform: translate(485.187px, 140.15px); transition: transform 400ms;"><div class="recharts-default-tooltip" role="status" aria-live="assertive" style="margin: 0px; padding: 10px; background: rgb(26, 32, 41); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; white-space: nowrap;"><p class="recharts-tooltip-label" style="margin: 0px;">08:00 PM</p><ul class="recharts-tooltip-item-list" style="padding: 0px; margin: 0px;"><li class="recharts-tooltip-item" style="display: block; padding-top: 4px; padding-bottom: 4px; color: rgb(79, 195, 247);"><span class="recharts-tooltip-item-name">count</span><span class="recharts-tooltip-item-separator"> : </span><span class="recharts-tooltip-item-value">27</span><span class="recharts-tooltip-item-unit"></span></li></ul></div></div><svg role="application" tabindex="0" class="recharts-surface" width="590" height="260" viewBox="0 0 590 260" style="width: 100%; height: 100%; display: block;"><title></title><desc></desc><g tabindex="-1" class="recharts-zIndex-layer_-100" style="outline: none;"><g class="recharts-cartesian-grid"><g class="recharts-cartesian-grid-horizontal"><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="220" x1="65" y1="225" x2="585" y2="225"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="220" x1="65" y1="170" x2="585" y2="170"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="220" x1="65" y1="115" x2="585" y2="115"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="220" x1="65" y1="60" x2="585" y2="60"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="220" x1="65" y1="5" x2="585" y2="5"></line></g><g class="recharts-cartesian-grid-vertical"><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="220" x1="65" y1="5" x2="65" y2="225"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="220" x1="585" y1="5" x2="585" y2="225"></line></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_-50" style="outline: none;"></g><defs><clippath id="recharts1-clip"><rect x="65" y="5" height="220" width="520"></rect></clippath></defs><g tabindex="-1" class="recharts-zIndex-layer_100" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_200" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_300" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_400" style="outline: none;"><g class="recharts-layer recharts-line"><g class="recharts-layer recharts-shape"><path stroke="#4fc3f7" stroke-width="2" fill="none" id="recharts-line-_r_3_" height="220" width="520" class="recharts-curve recharts-line-curve" d="M65,12.857L585,12.857"></path></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_500" style="outline: none;"><g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="225" width="520" class="recharts-cartesian-axis-line" fill="none" x1="65" y1="225" x2="585" y2="225"></line><g class="recharts-cartesian-axis-ticks recharts-xAxis-ticks"><g class="recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines"><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="225" width="520" class="recharts-cartesian-axis-tick-line" fill="none" x1="65" y1="231" x2="65" y2="225"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="225" width="520" class="recharts-cartesian-axis-tick-line" fill="none" x1="585" y1="231" x2="585" y2="225"></line></g></g></g></g><g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="220" class="recharts-cartesian-axis-line" fill="none" x1="65" y1="5" x2="65" y2="225"></line><g class="recharts-cartesian-axis-ticks recharts-yAxis-ticks"><g class="recharts-cartesian-axis-tick-lines recharts-yAxis-tick-lines"><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="220" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="225" x2="65" y2="225"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="220" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="170" x2="65" y2="170"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="220" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="115" x2="65" y2="115"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="220" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="60" x2="65" y2="60"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="220" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="5" x2="65" y2="5"></line></g></g></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_600" style="outline: none;"><g class="recharts-layer recharts-line-dots"><circle r="3" stroke="#4fc3f7" stroke-width="2" fill="#fff" fill-opacity="1" height="220" width="520" cx="65" cy="12.8571" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#4fc3f7" stroke-width="2" fill="#fff" fill-opacity="1" height="220" width="520" cx="585" cy="12.8571" class="recharts-dot recharts-line-dot"></circle></g></g><g tabindex="-1" class="recharts-zIndex-layer_1000" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_1100" style="outline: none;"><path stroke="#ccc" fill="#ccc" pointer-events="none" width="520" height="220" class="recharts-curve recharts-tooltip-cursor" d="M585,5L585,225"></path></g><g tabindex="-1" class="recharts-zIndex-layer_1200" style="outline: none;"><g class="recharts-layer recharts-active-dot"><circle cx="585" cy="12.857142857142854" r="4" fill="#4fc3f7" stroke-width="2" stroke="#fff" class="recharts-dot"></circle></g></g><g tabindex="-1" class="recharts-zIndex-layer_1900" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_2000" style="outline: none;"><g class="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels"><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" height="30" orientation="bottom" width="520" fill="#8a96a3" x="65" y="233" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" style="fill: rgb(138, 150, 163);"><tspan x="65" dy="0.71em">06:00 PM</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" height="30" orientation="bottom" width="520" fill="#8a96a3" x="557.1553764343262" y="233" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" style="fill: rgb(138, 150, 163);"><tspan x="557.1553764343262" dy="0.71em">08:00 PM</tspan></text></g></g><g class="recharts-cartesian-axis-tick-labels recharts-yAxis-tick-labels"><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="220" fill="#8a96a3" x="57" y="225" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">0</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="220" fill="#8a96a3" x="57" y="170" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">7</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="220" fill="#8a96a3" x="57" y="115" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">14</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="220" fill="#8a96a3" x="57" y="60" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">21</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="220" fill="#8a96a3" x="57" y="10.467288970947266" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">28</tspan></text></g></g></g></svg></div></div></div></div><div class="card"><h2>By vehicle type</h2><div class="recharts-responsive-container" style="width: 100%; height: 240px; min-width: 0px;"><div style="width: 0px; overflow-x: visible;"><div width="590" height="240" class="recharts-wrapper" style="position: relative; cursor: default; width: 590px; height: 240px;"><div xmlns="http://www.w3.org/1999/xhtml" tabindex="-1" class="recharts-tooltip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom" style="visibility: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px; transform: translate(400px, 21px);"><div class="recharts-default-tooltip" role="status" aria-live="assertive" style="margin: 0px; padding: 10px; background: rgb(26, 32, 41); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; white-space: nowrap;"><p class="recharts-tooltip-label" style="margin: 0px;"></p></div></div><svg role="application" tabindex="0" class="recharts-surface" width="590" height="240" viewBox="0 0 590 240" style="width: 100%; height: 100%; display: block;"><title></title><desc></desc><g tabindex="-1" class="recharts-zIndex-layer_-100" style="outline: none;"><g class="recharts-cartesian-grid"><g class="recharts-cartesian-grid-horizontal"><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="205" x2="585" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="155" x2="585" y2="155"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="105" x2="585" y2="105"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="55" x2="585" y2="55"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="5" x2="585" y2="5"></line></g><g class="recharts-cartesian-grid-vertical"><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="130" y1="5" x2="130" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="260" y1="5" x2="260" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="390" y1="5" x2="390" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="520" y1="5" x2="520" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="5" x2="65" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="585" y1="5" x2="585" y2="205"></line></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_-50" style="outline: none;"></g><defs><clippath id="recharts3-clip"><rect x="65" y="5" height="200" width="520"></rect></clippath></defs><g tabindex="-1" class="recharts-zIndex-layer_100" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_200" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_300" style="outline: none;"><g class="recharts-layer recharts-bar" id="recharts-bar-_r_7_"><g class="recharts-layer recharts-bar-rectangles"><g class="recharts-layer"><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><path fill="#4fc3f7" name="motorcycle" x="78" y="15" width="104" height="190" radius="0" class="recharts-rectangle" d="M 78,15 h 104 v 190 h -104 Z"></path></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><path fill="#4fc3f7" name="car" x="208" y="145" width="104" height="60" radius="0" class="recharts-rectangle" d="M 208,145 h 104 v 60 h -104 Z"></path></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><path fill="#4fc3f7" name="bus" x="338" y="195" width="104" height="10" radius="0" class="recharts-rectangle" d="M 338,195 h 104 v 10 h -104 Z"></path></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><path fill="#4fc3f7" name="truck" x="468" y="195" width="104" height="10" radius="0" class="recharts-rectangle" d="M 468,195 h 104 v 10 h -104 Z"></path></g></g></g></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_400" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_500" style="outline: none;"><g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="205" width="520" class="recharts-cartesian-axis-line" fill="none" x1="65" y1="205" x2="585" y2="205"></line><g class="recharts-cartesian-axis-ticks recharts-xAxis-ticks"><g class="recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines"><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="205" width="520" class="recharts-cartesian-axis-tick-line" fill="none" x1="130" y1="211" x2="130" y2="205"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="205" width="520" class="recharts-cartesian-axis-tick-line" fill="none" x1="260" y1="211" x2="260" y2="205"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="205" width="520" class="recharts-cartesian-axis-tick-line" fill="none" x1="390" y1="211" x2="390" y2="205"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="205" width="520" class="recharts-cartesian-axis-tick-line" fill="none" x1="520" y1="211" x2="520" y2="205"></line></g></g></g></g><g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-line" fill="none" x1="65" y1="5" x2="65" y2="205"></line><g class="recharts-cartesian-axis-ticks recharts-yAxis-ticks"><g class="recharts-cartesian-axis-tick-lines recharts-yAxis-tick-lines"><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="205" x2="65" y2="205"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="155" x2="65" y2="155"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="105" x2="65" y2="105"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="55" x2="65" y2="55"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="5" x2="65" y2="5"></line></g></g></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_600" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_1000" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_1100" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_1200" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_1900" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_2000" style="outline: none;"><g class="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels"><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" height="30" orientation="bottom" width="520" fill="#8a96a3" x="130" y="213" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" style="fill: rgb(138, 150, 163);"><tspan x="130" dy="0.71em">motorcycle</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" height="30" orientation="bottom" width="520" fill="#8a96a3" x="260" y="213" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" style="fill: rgb(138, 150, 163);"><tspan x="260" dy="0.71em">car</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" height="30" orientation="bottom" width="520" fill="#8a96a3" x="390" y="213" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" style="fill: rgb(138, 150, 163);"><tspan x="390" dy="0.71em">bus</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" height="30" orientation="bottom" width="520" fill="#8a96a3" x="520" y="213" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" style="fill: rgb(138, 150, 163);"><tspan x="520" dy="0.71em">truck</tspan></text></g></g><g class="recharts-cartesian-axis-tick-labels recharts-yAxis-tick-labels"><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="200" fill="#8a96a3" x="57" y="205" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">0</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="200" fill="#8a96a3" x="57" y="155" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">10</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="200" fill="#8a96a3" x="57" y="105" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">20</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="200" fill="#8a96a3" x="57" y="55" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">30</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="200" fill="#8a96a3" x="57" y="10.467288970947266" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">40</tspan></text></g></g></g></svg></div></div></div></div><div class="card"><h2>By colour</h2><div class="recharts-responsive-container" style="width: 100%; height: 240px; min-width: 0px;"><div style="width: 0px; overflow-x: visible;"><div width="590" height="240" class="recharts-wrapper" style="position: relative; cursor: default; width: 590px; height: 240px;"><div xmlns="http://www.w3.org/1999/xhtml" tabindex="-1" class="recharts-tooltip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-top" style="visibility: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px; transform: translate(140px, 164px);"><div class="recharts-default-tooltip" role="status" aria-live="assertive" style="margin: 0px; padding: 10px; background: rgb(26, 32, 41); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; white-space: nowrap;"><p class="recharts-tooltip-label" style="margin: 0px;"></p></div></div><svg role="application" tabindex="0" class="recharts-surface" width="590" height="240" viewBox="0 0 590 240" style="width: 100%; height: 100%; display: block;"><title></title><desc></desc><g tabindex="-1" class="recharts-zIndex-layer_-100" style="outline: none;"><g class="recharts-cartesian-grid"><g class="recharts-cartesian-grid-horizontal"><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="205" x2="585" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="155" x2="585" y2="155"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="105" x2="585" y2="105"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="55" x2="585" y2="55"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="5" x2="585" y2="5"></line></g><g class="recharts-cartesian-grid-vertical"><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="130" y1="5" x2="130" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="260" y1="5" x2="260" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="390" y1="5" x2="390" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="520" y1="5" x2="520" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="65" y1="5" x2="65" y2="205"></line><line stroke="#2a323d" fill="none" x="65" y="5" width="520" height="200" x1="585" y1="5" x2="585" y2="205"></line></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_-50" style="outline: none;"></g><defs><clippath id="recharts5-clip"><rect x="65" y="5" height="200" width="520"></rect></clippath></defs><g tabindex="-1" class="recharts-zIndex-layer_100" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_200" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_300" style="outline: none;"><g class="recharts-layer recharts-bar" id="recharts-bar-_r_b_"><g class="recharts-layer recharts-bar-rectangles"><g class="recharts-layer"><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><path fill="#3a3a3a" name="black" x="78" y="5" width="104" height="200" stroke="#555" radius="0" class="recharts-rectangle" d="M 78,5 h 104 v 200 h -104 Z"></path></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><path fill="#f0f0f0" name="white" x="208" y="155" width="104" height="50" stroke="#555" radius="0" class="recharts-rectangle" d="M 208,155 h 104 v 50 h -104 Z"></path></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><path fill="#c0c0c0" name="silver" x="338" y="195" width="104" height="10" stroke="#555" radius="0" class="recharts-rectangle" d="M 338,195 h 104 v 10 h -104 Z"></path></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><path fill="#808080" name="grey" x="468" y="195" width="104" height="10" stroke="#555" radius="0" class="recharts-rectangle" d="M 468,195 h 104 v 10 h -104 Z"></path></g></g></g></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_400" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_500" style="outline: none;"><g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="205" width="520" class="recharts-cartesian-axis-line" fill="none" x1="65" y1="205" x2="585" y2="205"></line><g class="recharts-cartesian-axis-ticks recharts-xAxis-ticks"><g class="recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines"><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="205" width="520" class="recharts-cartesian-axis-tick-line" fill="none" x1="130" y1="211" x2="130" y2="205"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="205" width="520" class="recharts-cartesian-axis-tick-line" fill="none" x1="260" y1="211" x2="260" y2="205"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="205" width="520" class="recharts-cartesian-axis-tick-line" fill="none" x1="390" y1="211" x2="390" y2="205"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" height="30" orientation="bottom" x="65" y="205" width="520" class="recharts-cartesian-axis-tick-line" fill="none" x1="520" y1="211" x2="520" y2="205"></line></g></g></g></g><g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-line" fill="none" x1="65" y1="5" x2="65" y2="205"></line><g class="recharts-cartesian-axis-ticks recharts-yAxis-ticks"><g class="recharts-cartesian-axis-tick-lines recharts-yAxis-tick-lines"><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="205" x2="65" y2="205"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="155" x2="65" y2="155"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="105" x2="65" y2="105"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="55" x2="65" y2="55"></line></g><g class="recharts-layer recharts-cartesian-axis-tick"><line stroke="#8a96a3" angle="0" orientation="left" width="60" x="5" y="5" height="200" class="recharts-cartesian-axis-tick-line" fill="none" x1="59" y1="5" x2="65" y2="5"></line></g></g></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_600" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_1000" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_1100" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_1200" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_1900" style="outline: none;"></g><g tabindex="-1" class="recharts-zIndex-layer_2000" style="outline: none;"><g class="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels"><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" height="30" orientation="bottom" width="520" fill="#8a96a3" x="130" y="213" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" style="fill: rgb(138, 150, 163);"><tspan x="130" dy="0.71em">black</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" height="30" orientation="bottom" width="520" fill="#8a96a3" x="260" y="213" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" style="fill: rgb(138, 150, 163);"><tspan x="260" dy="0.71em">white</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" height="30" orientation="bottom" width="520" fill="#8a96a3" x="390" y="213" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" style="fill: rgb(138, 150, 163);"><tspan x="390" dy="0.71em">silver</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" height="30" orientation="bottom" width="520" fill="#8a96a3" x="520" y="213" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" style="fill: rgb(138, 150, 163);"><tspan x="520" dy="0.71em">grey</tspan></text></g></g><g class="recharts-cartesian-axis-tick-labels recharts-yAxis-tick-labels"><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="200" fill="#8a96a3" x="57" y="205" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">0</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="200" fill="#8a96a3" x="57" y="155" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">10</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="200" fill="#8a96a3" x="57" y="105" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">20</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="200" fill="#8a96a3" x="57" y="55" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">30</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text stroke="none" orientation="left" width="60" height="200" fill="#8a96a3" x="57" y="10.467288970947266" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" style="fill: rgb(138, 150, 163);"><tspan x="57" dy="0.355em">40</tspan></text></g></g></g></svg></div></div></div></div><div class="card wide"><h2>Recent events</h2><table><thead><tr><th>Time</th><th>Type</th><th>Colour</th><th>Direction</th></tr></thead><tbody><tr><td>Nov 26, 08:27:12 PM</td><td>bus</td><td>white</td><td>down</td></tr><tr><td>Nov 26, 08:27:10 PM</td><td>motorcycle</td><td>black</td><td>down</td></tr><tr><td>Nov 26, 08:27:08 PM</td><td>car</td><td>white</td><td>down</td></tr><tr><td>Nov 26, 08:27:06 PM</td><td>motorcycle</td><td>black</td><td>down</td></tr><tr><td>Nov 26, 08:27:06 PM</td><td>motorcycle</td><td>black</td><td>down</td></tr><tr><td>Nov 26, 08:27:02 PM</td><td>motorcycle</td><td>black</td><td>down</td></tr><tr><td>Nov 26, 08:26:57 PM</td><td>motorcycle</td><td>black</td><td>down</td></tr><tr><td>Nov 26, 08:26:56 PM</td><td>motorcycle</td><td>black</td><td>down</td></tr><tr><td>Nov 26, 08:26:52 PM</td><td>truck</td><td>grey</td><td>down</td></tr><tr><td>Nov 26, 08:26:52 PM</td><td>car</td><td>white</td><td>down</td></tr><tr><td>Nov 26, 08:26:48 PM</td><td>motorcycle</td><td>black</td><td>down</td></tr><tr><td>Nov 26, 08:26:40 PM</td><td>motorcycle</td><td>black</td><td>down</td></tr><tr><td>Nov 26, 08:26:40 PM</td><td>car</td><td>black</td><td>down</td></tr><tr><td>Nov 26, 08:26:38 PM</td><td>motorcycle</td><td>black</td><td>down</td></tr><tr><td>Nov 26, 08:26:38 PM</td><td>motorcycle</td><td>black</td><td>down</td></tr></tbody></table></div></section></div></div>
+    <script type="module" src="./dashboard_files/main.jsx"></script>
+  
 
-<span id=3D"recharts_measurement_span" aria-hidden=3D"true" style=3D"positi=
-on: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; border-w=
-idth: medium; border-style: none; border-color: currentcolor; border-image:=
- none; white-space: pre; fill: rgb(139, 152, 173); font-size: 16px; letter-=
-spacing: normal;">7</span><span id=3D"PING_CONTENT_PUSH_NOTIFICATION" style=
-=3D"display: none;"></span></body></html>
-------MultipartBoundary--mUPDl1zkjRgMavfVmW6zlejM6FBgPnka6UtPwy9xLX----
-Content-Type: text/css
-Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-5d1790ec-d110-4dda-ba94-6f6a31195474@mhtml.blink
-
-@charset "utf-8";
-
-.app { max-width: 1200px; margin: 0px auto; padding: 20px; }
-
-.header { display: flex; justify-content: space-between; align-items: cente=
-r; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
-
-.header h1 { margin: 0px; font-size: 1.5rem; }
-
-.status { font-size: 0.85rem; color: rgb(139, 152, 173); }
-
-.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; =
-background: rgb(34, 197, 94); margin-right: 6px; }
-
-.dot.off { background: rgb(239, 68, 68); }
-
-.grid-cards { display: grid; gap: 14px; margin-bottom: 20px; grid-template-=
-columns: repeat(auto-fit, minmax(160px, 1fr)); }
-
-.card { background: rgb(19, 28, 46); border: 1px solid rgb(31, 43, 68); bor=
-der-radius: 12px; padding: 16px; }
-
-.card .label { color: rgb(139, 152, 173); font-size: 0.85rem; margin-bottom=
-: 6px; }
-
-.card .value { font-size: 2rem; font-weight: 700; }
-
-.card.total { border-color: rgb(47, 107, 255); }
-
-.grid-main { display: grid; gap: 14px; margin-bottom: 20px; grid-template-c=
-olumns: repeat(auto-fit, minmax(340px, 1fr)); }
-
-.panel h2 { margin: 0px 0px 12px; font-size: 1.05rem; }
-
-.chart-box { width: 100%; height: 260px; }
-
-.video-box { height: 260px; display: flex; align-items: center; justify-con=
-tent: center; text-align: center; color: rgb(139, 152, 173); border: 1px da=
-shed rgb(42, 58, 92); border-radius: 8px; padding: 12px; }
-
-.table-wrap { overflow-x: auto; }
-
-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
-
-th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid rgb(=
-31, 43, 68); }
-
-th { color: rgb(139, 152, 173); font-weight: 600; }
-
-.swatch { display: inline-block; width: 12px; height: 12px; border-radius: =
-50%; border: 1px solid rgb(85, 85, 85); margin-right: 6px; vertical-align: =
-middle; }
-
-.empty { color: rgb(139, 152, 173); padding: 12px 0px; }
-------MultipartBoundary--mUPDl1zkjRgMavfVmW6zlejM6FBgPnka6UtPwy9xLX----
-Content-Type: text/css
-Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-2bc2b65a-71fd-4953-a14a-9dfcf0fa7f08@mhtml.blink
-
-@charset "utf-8";
-
-* { box-sizing: border-box; }
-
-body { margin: 0px; font-family: "Segoe UI", system-ui, -apple-system, Aria=
-l, sans-serif; background: rgb(11, 18, 32); color: rgb(229, 233, 240); }
-------MultipartBoundary--mUPDl1zkjRgMavfVmW6zlejM6FBgPnka6UtPwy9xLX------
+<span id="recharts_measurement_span" aria-hidden="true" style="position: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; white-space: pre; fill: rgb(138, 150, 163); font-size: 16px; letter-spacing: normal;">black</span></body></html>

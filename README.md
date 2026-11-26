@@ -219,3 +219,5 @@ Open http://localhost:5173
 | Stream test | API docs |
 |-------------|----------|
 | ![Stream](docs/stream-test.png) | ![API docs](docs/api-docs.png) |
+The dashboard shows the raw live stream. The annotated view (boxes, track IDs,
+colour, counts) is shown in the pipeline's own window (see the Pipeline screenshot).
