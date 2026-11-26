@@ -8,3 +8,6 @@ mediamtx/mediamtx.exe
 debug_crops/
 mediamtx/auto.key
 mediamtx/auto.crt
+auto.key
+auto.crt
+docs/api-docs_files/

@@ -1,4 +1,4 @@
-@'
+﻿@'
 # Vehicle Analytics
 
 Real-time vehicle counting and analytics from a traffic video stream.
@@ -51,16 +51,16 @@ traffic.mp4 --ffmpeg--> MediaMTX (RTSP :8554 / HLS :8888)
 
 ```
 vehicle-analytics/
-├── backend/        FastAPI app (main.py)
-├── database/       SQL for the vehicle_events table
-├── docs/           Screenshots
-├── frontend/       React dashboard (Vite)
-├── mediamtx/       MediaMTX config (binary not committed)
-├── pipeline/       Detection, tracking, colour, counting
-├── scripts/        Helper scripts
-├── videos/         Input video (not committed)
-├── requirements.txt
-└── .env            Database settings (not committed)
+â”œâ”€â”€ backend/        FastAPI app (main.py)
+â”œâ”€â”€ database/       SQL for the vehicle_events table
+â”œâ”€â”€ docs/           Screenshots
+â”œâ”€â”€ frontend/       React dashboard (Vite)
+â”œâ”€â”€ mediamtx/       MediaMTX config (binary not committed)
+â”œâ”€â”€ pipeline/       Detection, tracking, colour, counting
+â”œâ”€â”€ scripts/        Helper scripts
+â”œâ”€â”€ videos/         Input video (not committed)
+â”œâ”€â”€ requirements.txt
+â””â”€â”€ .env            Database settings (not committed)
 ```
 
 ## Setup
@@ -219,4 +219,3 @@ Open http://localhost:5173
 | Stream test | API docs |
 |-------------|----------|
 | ![Stream](docs/stream-test.png) | ![API docs](docs/api-docs.png) |
-'@ | Set-Content -Path README.md -Encoding UTF8
