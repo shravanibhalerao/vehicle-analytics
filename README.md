@@ -1,3 +1,4 @@
+@'
 # Vehicle Analytics
 
 Real-time vehicle counting and analytics from a traffic video stream.
@@ -138,4 +139,84 @@ Press `q` in the video window to stop.
 **4. Backend** (with venv active, from the project root)
 
 ```powershell
-uvicorn
+uvicorn backend.main:app --reload --port 8000
+```
+
+API docs: http://localhost:8000/docs
+
+**5. Dashboard**
+
+```powershell
+cd frontend
+npm run dev
+```
+
+Open http://localhost:5173
+
+## API
+
+| Method | Endpoint                          | Description                            |
+|--------|-----------------------------------|----------------------------------------|
+| GET    | `/api/total`                      | Total vehicles counted                 |
+| GET    | `/api/stats/types`                | Count per vehicle type                 |
+| GET    | `/api/stats/colors`               | Count per vehicle colour               |
+| GET    | `/api/events/recent?limit=20`     | Latest crossing events                 |
+| GET    | `/api/analytics/history?hours=24` | Vehicles per hour for the last N hours |
+
+## Database table: `vehicle_events`
+
+| Column          | Meaning                                    |
+|-----------------|--------------------------------------------|
+| `id`            | Row id                                     |
+| `vehicle_id`    | ByteTrack ID of the vehicle                |
+| `vehicle_type`  | car / motorcycle / bus / truck             |
+| `vehicle_color` | black / white / silver / grey / red / blue |
+| `direction`     | up / down                                  |
+| `timestamp`     | Time the vehicle crossed the line          |
+
+## How it works
+
+1. **Detect**: YOLOv8n finds vehicles in each frame (confidence >= 0.35).
+2. **Track**: ByteTrack links detections across frames so each vehicle keeps one ID.
+3. **Colour**: every 12 frames per vehicle, the cropped box is sent to CLIP with
+   prompts like "a photo of a black car". The latest 7 guesses are kept and the
+   most common one is used.
+4. **Count**: a horizontal line sits at 60% of the frame height. When a vehicle's
+   centre moves across it, the vehicle is counted once with its direction.
+5. **Store and serve**: each crossing is written to PostgreSQL, FastAPI reads it,
+   and the dashboard polls the API every 5 seconds.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| `mediamtx.exe is not recognized` | PowerShell needs a path: run `.\mediamtx.exe` or `mediamtx\mediamtx.exe` |
+| ffmpeg: `400 Bad Request` | Use the re-encode command above (no audio, `libx264`, `-rtsp_transport tcp`) |
+| Dashboard: "Stream nahi mila" | MediaMTX or ffmpeg is not running |
+| Dashboard: "Backend se data nahi aaya" | Uvicorn is not running |
+| `Missing script: dev` | Run `npm run dev` inside the `frontend` folder |
+
+## Known limitations
+
+- **Colour is approximate.** An HSV colour method was tried first, but the video's
+  blue tint, glare and crowding made it unreliable, so CLIP is used instead.
+  CLIP is better but still makes mistakes on small or partly hidden vehicles.
+- **Motorcycles often come out as "black"**, because the rider's dark clothes and
+  helmet fill most of the crop.
+- **CPU speed**: about 3 to 8 FPS on a laptop CPU because of CLIP. A GPU would be
+  much faster.
+- **Crowded scenes**: vehicles hidden behind others can lose their tracking ID,
+  which can cause a missed or double count.
+- **Single counting line**, tuned for this video's camera angle. A different
+  camera may need a new line position.
+
+## Screenshots
+
+| Dashboard | Pipeline |
+|-----------|----------|
+| ![Dashboard](docs/dashboard.png) | ![Pipeline](docs/pipeline.png) |
+
+| Stream test | API docs |
+|-------------|----------|
+| ![Stream](docs/stream-test.png) | ![API docs](docs/api-docs.png) |
+'@ | Set-Content -Path README.md -Encoding UTF8
