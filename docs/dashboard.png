@@ -1,0 +1,434 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://localhost:5173/
+Subject: frontend-app
+Date: Thu, 26 Nov 2026 13:11:49 GMT
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--mUPDl1zkjRgMavfVmW6zlejM6FBgPnka6UtPwy9xLX----"
+
+
+------MultipartBoundary--mUPDl1zkjRgMavfVmW6zlejM6FBgPnka6UtPwy9xLX----
+Content-Type: text/html
+Content-ID: <frame-88F7AF52416A07F0B01535BBBC082706@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://localhost:5173/
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-2bc2b65a-71fd-4953-a14a-9dfcf0fa7f08@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-5d1790ec-d110-4dda=
+-ba94-6f6a31195474@mhtml.blink" />
+   =20
+
+   =20
+
+   =20
+    <link rel=3D"icon" type=3D"image/svg+xml" href=3D"http://localhost:5173=
+/favicon.svg">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>frontend-app</title>
+  </head>
+  <body>
+    <div id=3D"root"><div class=3D"app"><div class=3D"header"><h1>=F0=9F=9A=
+=A6 Real-Time Vehicle Analytics</h1><div class=3D"status"><span class=3D"do=
+t"></span>API connected =C2=B7 updated 6:41:45 PM</div></div><div class=3D"=
+grid-cards"><div class=3D"card total"><div class=3D"label">Total Vehicles</=
+div><div class=3D"value">27</div></div><div class=3D"card"><div class=3D"la=
+bel">Cars</div><div class=3D"value">6</div></div><div class=3D"card"><div c=
+lass=3D"label">Buses</div><div class=3D"value">1</div></div><div class=3D"c=
+ard"><div class=3D"label">Trucks</div><div class=3D"value">1</div></div><di=
+v class=3D"card"><div class=3D"label">Motorcycles</div><div class=3D"value"=
+>19</div></div></div><div class=3D"grid-main"><div class=3D"card panel"><h2=
+>Vehicle Colour Distribution</h2><div class=3D"chart-box"><div class=3D"rec=
+harts-responsive-container" style=3D"width: 100%; height: 100%; min-width: =
+0px;"><div style=3D"width: 0px; height: 0px; overflow: visible;"><div width=
+=3D"343" height=3D"260" class=3D"recharts-wrapper" style=3D"position: relat=
+ive; cursor: default; width: 343px; height: 260px;"><div xmlns=3D"http://ww=
+w.w3.org/1999/xhtml" tabindex=3D"-1" class=3D"recharts-tooltip-wrapper rech=
+arts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom" style=3D"visibi=
+lity: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px=
+; transform: translate(313.875px, 81px);"><div class=3D"recharts-default-to=
+oltip" role=3D"status" aria-live=3D"assertive" style=3D"margin: 0px; paddin=
+g: 10px; background: rgb(19, 28, 46); border: 1px solid rgb(31, 43, 68); wh=
+ite-space: nowrap;"><p class=3D"recharts-tooltip-label" style=3D"margin: 0p=
+x;"></p></div></div><svg role=3D"application" tabindex=3D"0" class=3D"recha=
+rts-surface" width=3D"343" height=3D"260" viewBox=3D"0 0 343 260" style=3D"=
+width: 100%; height: 100%; display: block;"><title></title><desc></desc><g =
+tabindex=3D"-1" class=3D"recharts-zIndex-layer_-100" style=3D"outline: none=
+;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_-50" style=3D"outl=
+ine: none;"></g><defs><clipPath id=3D"recharts1-clip"><rect x=3D"65" y=3D"5=
+" height=3D"220" width=3D"273"></rect></clipPath></defs><g tabindex=3D"-1" =
+class=3D"recharts-zIndex-layer_100" style=3D"outline: none;"></g><g tabinde=
+x=3D"-1" class=3D"recharts-zIndex-layer_200" style=3D"outline: none;"></g><=
+g tabindex=3D"-1" class=3D"recharts-zIndex-layer_300" style=3D"outline: non=
+e;"><g class=3D"recharts-layer recharts-bar" id=3D"recharts-bar-_r_0_"><g c=
+lass=3D"recharts-layer recharts-bar-rectangles"><g class=3D"recharts-layer"=
+><g class=3D"recharts-layer recharts-bar-rectangle"><g class=3D"recharts-la=
+yer recharts-inactive-bar"><path fill=3D"#111111" x=3D"71.825" y=3D"5" widt=
+h=3D"55" height=3D"220" stroke=3D"#555" class=3D"recharts-rectangle" d=3D"M=
+71.825,11A 6,6,0,0,1,77.825,5L 120.825,5A 6,6,0,0,1,
+        126.825,11L 126.825,225L 71.825,225Z"></path></g></g><g class=3D"re=
+charts-layer recharts-bar-rectangle"><g class=3D"recharts-layer recharts-in=
+active-bar"><path fill=3D"#f1f1f1" x=3D"140.075" y=3D"170" width=3D"55" hei=
+ght=3D"55" stroke=3D"#555" class=3D"recharts-rectangle" d=3D"M140.075,176A =
+6,6,0,0,1,146.075,170L 189.075,170A 6,6,0,0,1,
+        195.075,176L 195.075,225L 140.075,225Z"></path></g></g><g class=3D"=
+recharts-layer recharts-bar-rectangle"><g class=3D"recharts-layer recharts-=
+inactive-bar"><path fill=3D"#c0c0c0" x=3D"208.325" y=3D"214" width=3D"55" h=
+eight=3D"11" stroke=3D"#555" class=3D"recharts-rectangle" d=3D"M208.325,219=
+.5A 5.5,5.5,0,0,1,213.825,214L 257.825,214A 5.5,5.5,0,0,1,
+        263.325,219.5L 263.325,225L 208.325,225Z"></path></g></g><g class=
+=3D"recharts-layer recharts-bar-rectangle"><g class=3D"recharts-layer recha=
+rts-inactive-bar"><path fill=3D"#808080" x=3D"276.575" y=3D"214" width=3D"5=
+5" height=3D"11" stroke=3D"#555" class=3D"recharts-rectangle" d=3D"M276.575=
+,219.5A 5.5,5.5,0,0,1,282.075,214L 326.075,214A 5.5,5.5,0,0,1,
+        331.575,219.5L 331.575,225L 276.575,225Z"></path></g></g></g></g></=
+g></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_400" style=3D"outli=
+ne: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_500" style=
+=3D"outline: none;"><g class=3D"recharts-layer recharts-cartesian-axis rech=
+arts-xAxis xAxis"><line stroke=3D"#8b98ad" angle=3D"0" height=3D"30" orient=
+ation=3D"bottom" x=3D"65" y=3D"225" width=3D"273" class=3D"recharts-cartesi=
+an-axis-line" fill=3D"none" x1=3D"65" y1=3D"225" x2=3D"338" y2=3D"225"></li=
+ne><g class=3D"recharts-cartesian-axis-ticks recharts-xAxis-ticks"><g class=
+=3D"recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines"><g class=
+=3D"recharts-layer recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad" a=
+ngle=3D"0" height=3D"30" orientation=3D"bottom" x=3D"65" y=3D"225" width=3D=
+"273" class=3D"recharts-cartesian-axis-tick-line" fill=3D"none" x1=3D"99.12=
+5" y1=3D"231" x2=3D"99.125" y2=3D"225"></line></g><g class=3D"recharts-laye=
+r recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" height=
+=3D"30" orientation=3D"bottom" x=3D"65" y=3D"225" width=3D"273" class=3D"re=
+charts-cartesian-axis-tick-line" fill=3D"none" x1=3D"167.375" y1=3D"231" x2=
+=3D"167.375" y2=3D"225"></line></g><g class=3D"recharts-layer recharts-cart=
+esian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" height=3D"30" orienta=
+tion=3D"bottom" x=3D"65" y=3D"225" width=3D"273" class=3D"recharts-cartesia=
+n-axis-tick-line" fill=3D"none" x1=3D"235.625" y1=3D"231" x2=3D"235.625" y2=
+=3D"225"></line></g><g class=3D"recharts-layer recharts-cartesian-axis-tick=
+"><line stroke=3D"#8b98ad" angle=3D"0" height=3D"30" orientation=3D"bottom"=
+ x=3D"65" y=3D"225" width=3D"273" class=3D"recharts-cartesian-axis-tick-lin=
+e" fill=3D"none" x1=3D"303.875" y1=3D"231" x2=3D"303.875" y2=3D"225"></line=
+></g></g></g></g><g class=3D"recharts-layer recharts-cartesian-axis rechart=
+s-yAxis yAxis"><line stroke=3D"#8b98ad" angle=3D"0" orientation=3D"left" wi=
+dth=3D"60" x=3D"5" y=3D"5" height=3D"220" class=3D"recharts-cartesian-axis-=
+line" fill=3D"none" x1=3D"65" y1=3D"5" x2=3D"65" y2=3D"225"></line><g class=
+=3D"recharts-cartesian-axis-ticks recharts-yAxis-ticks"><g class=3D"rechart=
+s-cartesian-axis-tick-lines recharts-yAxis-tick-lines"><g class=3D"recharts=
+-layer recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" o=
+rientation=3D"left" width=3D"60" x=3D"5" y=3D"5" height=3D"220" class=3D"re=
+charts-cartesian-axis-tick-line" fill=3D"none" x1=3D"59" y1=3D"225" x2=3D"6=
+5" y2=3D"225"></line></g><g class=3D"recharts-layer recharts-cartesian-axis=
+-tick"><line stroke=3D"#8b98ad" angle=3D"0" orientation=3D"left" width=3D"6=
+0" x=3D"5" y=3D"5" height=3D"220" class=3D"recharts-cartesian-axis-tick-lin=
+e" fill=3D"none" x1=3D"59" y1=3D"170" x2=3D"65" y2=3D"170"></line></g><g cl=
+ass=3D"recharts-layer recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad=
+" angle=3D"0" orientation=3D"left" width=3D"60" x=3D"5" y=3D"5" height=3D"2=
+20" class=3D"recharts-cartesian-axis-tick-line" fill=3D"none" x1=3D"59" y1=
+=3D"115" x2=3D"65" y2=3D"115"></line></g><g class=3D"recharts-layer rechart=
+s-cartesian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" orientation=3D"=
+left" width=3D"60" x=3D"5" y=3D"5" height=3D"220" class=3D"recharts-cartesi=
+an-axis-tick-line" fill=3D"none" x1=3D"59" y1=3D"60" x2=3D"65" y2=3D"60"></=
+line></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><line str=
+oke=3D"#8b98ad" angle=3D"0" orientation=3D"left" width=3D"60" x=3D"5" y=3D"=
+5" height=3D"220" class=3D"recharts-cartesian-axis-tick-line" fill=3D"none"=
+ x1=3D"59" y1=3D"5" x2=3D"65" y2=3D"5"></line></g></g></g></g></g><g tabind=
+ex=3D"-1" class=3D"recharts-zIndex-layer_600" style=3D"outline: none;"></g>=
+<g tabindex=3D"-1" class=3D"recharts-zIndex-layer_1000" style=3D"outline: n=
+one;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_1100" style=3D"=
+outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_1200"=
+ style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-l=
+ayer_1900" style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"rechart=
+s-zIndex-layer_2000" style=3D"outline: none;"><g class=3D"recharts-cartesia=
+n-axis-tick-labels recharts-xAxis-tick-labels"><g class=3D"recharts-layer r=
+echarts-cartesian-axis-tick-label"><text stroke=3D"none" height=3D"30" orie=
+ntation=3D"bottom" width=3D"273" fill=3D"#8b98ad" x=3D"99.125" y=3D"233" cl=
+ass=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D"mid=
+dle" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"99.125" dy=3D"0.71em">=
+black</tspan></text></g><g class=3D"recharts-layer recharts-cartesian-axis-=
+tick-label"><text stroke=3D"none" height=3D"30" orientation=3D"bottom" widt=
+h=3D"273" fill=3D"#8b98ad" x=3D"167.375" y=3D"233" class=3D"recharts-text r=
+echarts-cartesian-axis-tick-value" text-anchor=3D"middle" style=3D"fill: rg=
+b(139, 152, 173);"><tspan x=3D"167.375" dy=3D"0.71em">white</tspan></text><=
+/g><g class=3D"recharts-layer recharts-cartesian-axis-tick-label"><text str=
+oke=3D"none" height=3D"30" orientation=3D"bottom" width=3D"273" fill=3D"#8b=
+98ad" x=3D"235.625" y=3D"233" class=3D"recharts-text recharts-cartesian-axi=
+s-tick-value" text-anchor=3D"middle" style=3D"fill: rgb(139, 152, 173);"><t=
+span x=3D"235.625" dy=3D"0.71em">silver</tspan></text></g><g class=3D"recha=
+rts-layer recharts-cartesian-axis-tick-label"><text stroke=3D"none" height=
+=3D"30" orientation=3D"bottom" width=3D"273" fill=3D"#8b98ad" x=3D"303.875"=
+ y=3D"233" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-=
+anchor=3D"middle" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"303.875" =
+dy=3D"0.71em">grey</tspan></text></g></g><g class=3D"recharts-cartesian-axi=
+s-tick-labels recharts-yAxis-tick-labels"><g class=3D"recharts-layer rechar=
+ts-cartesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" wi=
+dth=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"225" class=3D"rech=
+arts-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" style=3D"=
+fill: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">0</tspan></text><=
+/g><g class=3D"recharts-layer recharts-cartesian-axis-tick-label"><text str=
+oke=3D"none" orientation=3D"left" width=3D"60" height=3D"220" fill=3D"#8b98=
+ad" x=3D"57" y=3D"170" class=3D"recharts-text recharts-cartesian-axis-tick-=
+value" text-anchor=3D"end" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"=
+57" dy=3D"0.355em">5</tspan></text></g><g class=3D"recharts-layer recharts-=
+cartesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" width=
+=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"115" class=3D"rechart=
+s-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" style=3D"fil=
+l: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">10</tspan></text></g=
+><g class=3D"recharts-layer recharts-cartesian-axis-tick-label"><text strok=
+e=3D"none" orientation=3D"left" width=3D"60" height=3D"220" fill=3D"#8b98ad=
+" x=3D"57" y=3D"60" class=3D"recharts-text recharts-cartesian-axis-tick-val=
+ue" text-anchor=3D"end" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"57"=
+ dy=3D"0.355em">15</tspan></text></g><g class=3D"recharts-layer recharts-ca=
+rtesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" width=
+=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"10.654205322265625" c=
+lass=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D"en=
+d" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">20</t=
+span></text></g></g></g></svg></div></div></div></div></div><div class=3D"c=
+ard panel"><h2>Vehicles per Hour (last 24h)</h2><div class=3D"chart-box"><d=
+iv class=3D"recharts-responsive-container" style=3D"width: 100%; height: 10=
+0%; min-width: 0px;"><div style=3D"width: 0px; height: 0px; overflow: visib=
+le;"><div width=3D"343" height=3D"260" class=3D"recharts-wrapper" style=3D"=
+position: relative; cursor: default; width: 343px; height: 260px;"><div xml=
+ns=3D"http://www.w3.org/1999/xhtml" tabindex=3D"-1" class=3D"recharts-toolt=
+ip-wrapper recharts-tooltip-wrapper-right recharts-tooltip-wrapper-top" sty=
+le=3D"visibility: hidden; pointer-events: none; position: absolute; top: 0p=
+x; left: 0px; transform: translate(211.5px, 176.78px);"><div class=3D"recha=
+rts-default-tooltip" role=3D"status" aria-live=3D"assertive" style=3D"margi=
+n: 0px; padding: 10px; background: rgb(19, 28, 46); border: 1px solid rgb(3=
+1, 43, 68); white-space: nowrap;"><p class=3D"recharts-tooltip-label" style=
+=3D"margin: 0px;"></p></div></div><svg role=3D"application" tabindex=3D"0" =
+class=3D"recharts-surface" width=3D"343" height=3D"260" viewBox=3D"0 0 343 =
+260" style=3D"width: 100%; height: 100%; display: block;"><title></title><d=
+esc></desc><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_-100" style=3D=
+"outline: none;"><g class=3D"recharts-cartesian-grid"><g class=3D"recharts-=
+cartesian-grid-horizontal"><line stroke=3D"#1f2b44" fill=3D"none" x=3D"65" =
+y=3D"5" width=3D"273" height=3D"220" x1=3D"65" y1=3D"225" x2=3D"338" y2=3D"=
+225"></line><line stroke=3D"#1f2b44" fill=3D"none" x=3D"65" y=3D"5" width=
+=3D"273" height=3D"220" x1=3D"65" y1=3D"170" x2=3D"338" y2=3D"170"></line><=
+line stroke=3D"#1f2b44" fill=3D"none" x=3D"65" y=3D"5" width=3D"273" height=
+=3D"220" x1=3D"65" y1=3D"115" x2=3D"338" y2=3D"115"></line><line stroke=3D"=
+#1f2b44" fill=3D"none" x=3D"65" y=3D"5" width=3D"273" height=3D"220" x1=3D"=
+65" y1=3D"60" x2=3D"338" y2=3D"60"></line><line stroke=3D"#1f2b44" fill=3D"=
+none" x=3D"65" y=3D"5" width=3D"273" height=3D"220" x1=3D"65" y1=3D"5" x2=
+=3D"338" y2=3D"5"></line></g><g class=3D"recharts-cartesian-grid-vertical">=
+<line stroke=3D"#1f2b44" fill=3D"none" x=3D"65" y=3D"5" width=3D"273" heigh=
+t=3D"220" x1=3D"201.5" y1=3D"5" x2=3D"201.5" y2=3D"225"></line><line stroke=
+=3D"#1f2b44" fill=3D"none" x=3D"65" y=3D"5" width=3D"273" height=3D"220" x1=
+=3D"65" y1=3D"5" x2=3D"65" y2=3D"225"></line><line stroke=3D"#1f2b44" fill=
+=3D"none" x=3D"65" y=3D"5" width=3D"273" height=3D"220" x1=3D"338" y1=3D"5"=
+ x2=3D"338" y2=3D"225"></line></g></g></g><g tabindex=3D"-1" class=3D"recha=
+rts-zIndex-layer_-50" style=3D"outline: none;"></g><defs><clipPath id=3D"re=
+charts3-clip"><rect x=3D"65" y=3D"5" height=3D"220" width=3D"273"></rect></=
+clipPath></defs><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_100" styl=
+e=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_=
+200" style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zInd=
+ex-layer_300" style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"rech=
+arts-zIndex-layer_400" style=3D"outline: none;"><g class=3D"recharts-layer =
+recharts-line"></g></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_50=
+0" style=3D"outline: none;"><g class=3D"recharts-layer recharts-cartesian-a=
+xis recharts-xAxis xAxis"><line stroke=3D"#8b98ad" angle=3D"0" height=3D"30=
+" orientation=3D"bottom" x=3D"65" y=3D"225" width=3D"273" class=3D"recharts=
+-cartesian-axis-line" fill=3D"none" x1=3D"65" y1=3D"225" x2=3D"338" y2=3D"2=
+25"></line><g class=3D"recharts-cartesian-axis-ticks recharts-xAxis-ticks">=
+<g class=3D"recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines"><=
+g class=3D"recharts-layer recharts-cartesian-axis-tick"><line stroke=3D"#8b=
+98ad" angle=3D"0" height=3D"30" orientation=3D"bottom" x=3D"65" y=3D"225" w=
+idth=3D"273" class=3D"recharts-cartesian-axis-tick-line" fill=3D"none" x1=
+=3D"201.5" y1=3D"231" x2=3D"201.5" y2=3D"225"></line></g></g></g></g><g cla=
+ss=3D"recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><line st=
+roke=3D"#8b98ad" angle=3D"0" orientation=3D"left" width=3D"60" x=3D"5" y=3D=
+"5" height=3D"220" class=3D"recharts-cartesian-axis-line" fill=3D"none" x1=
+=3D"65" y1=3D"5" x2=3D"65" y2=3D"225"></line><g class=3D"recharts-cartesian=
+-axis-ticks recharts-yAxis-ticks"><g class=3D"recharts-cartesian-axis-tick-=
+lines recharts-yAxis-tick-lines"><g class=3D"recharts-layer recharts-cartes=
+ian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" orientation=3D"left" wi=
+dth=3D"60" x=3D"5" y=3D"5" height=3D"220" class=3D"recharts-cartesian-axis-=
+tick-line" fill=3D"none" x1=3D"59" y1=3D"225" x2=3D"65" y2=3D"225"></line><=
+/g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><line stroke=3D=
+"#8b98ad" angle=3D"0" orientation=3D"left" width=3D"60" x=3D"5" y=3D"5" hei=
+ght=3D"220" class=3D"recharts-cartesian-axis-tick-line" fill=3D"none" x1=3D=
+"59" y1=3D"170" x2=3D"65" y2=3D"170"></line></g><g class=3D"recharts-layer =
+recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad" angle=3D"0" orientat=
+ion=3D"left" width=3D"60" x=3D"5" y=3D"5" height=3D"220" class=3D"recharts-=
+cartesian-axis-tick-line" fill=3D"none" x1=3D"59" y1=3D"115" x2=3D"65" y2=
+=3D"115"></line></g><g class=3D"recharts-layer recharts-cartesian-axis-tick=
+"><line stroke=3D"#8b98ad" angle=3D"0" orientation=3D"left" width=3D"60" x=
+=3D"5" y=3D"5" height=3D"220" class=3D"recharts-cartesian-axis-tick-line" f=
+ill=3D"none" x1=3D"59" y1=3D"60" x2=3D"65" y2=3D"60"></line></g><g class=3D=
+"recharts-layer recharts-cartesian-axis-tick"><line stroke=3D"#8b98ad" angl=
+e=3D"0" orientation=3D"left" width=3D"60" x=3D"5" y=3D"5" height=3D"220" cl=
+ass=3D"recharts-cartesian-axis-tick-line" fill=3D"none" x1=3D"59" y1=3D"5" =
+x2=3D"65" y2=3D"5"></line></g></g></g></g></g><g tabindex=3D"-1" class=3D"r=
+echarts-zIndex-layer_600" style=3D"outline: none;"><g class=3D"recharts-lay=
+er recharts-line-dots"><circle r=3D"3" stroke=3D"#2f6bff" stroke-width=3D"2=
+" fill=3D"#fff" fill-opacity=3D"1" height=3D"220" width=3D"273" cx=3D"201.5=
+" cy=3D"12.857142857142854" class=3D"recharts-dot recharts-line-dot"></circ=
+le></g></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_1000" style=3D=
+"outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-layer_1100=
+" style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"recharts-zIndex-=
+layer_1200" style=3D"outline: none;"></g><g tabindex=3D"-1" class=3D"rechar=
+ts-zIndex-layer_1900" style=3D"outline: none;"></g><g tabindex=3D"-1" class=
+=3D"recharts-zIndex-layer_2000" style=3D"outline: none;"><g class=3D"rechar=
+ts-cartesian-axis-tick-labels recharts-xAxis-tick-labels"><g class=3D"recha=
+rts-layer recharts-cartesian-axis-tick-label"><text stroke=3D"none" height=
+=3D"30" orientation=3D"bottom" width=3D"273" fill=3D"#8b98ad" x=3D"201.5" y=
+=3D"233" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-an=
+chor=3D"middle" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"201.5" dy=
+=3D"0.71em">06:00 PM</tspan></text></g></g><g class=3D"recharts-cartesian-a=
+xis-tick-labels recharts-yAxis-tick-labels"><g class=3D"recharts-layer rech=
+arts-cartesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" =
+width=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"225" class=3D"re=
+charts-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" style=
+=3D"fill: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">0</tspan></te=
+xt></g><g class=3D"recharts-layer recharts-cartesian-axis-tick-label"><text=
+ stroke=3D"none" orientation=3D"left" width=3D"60" height=3D"220" fill=3D"#=
+8b98ad" x=3D"57" y=3D"170" class=3D"recharts-text recharts-cartesian-axis-t=
+ick-value" text-anchor=3D"end" style=3D"fill: rgb(139, 152, 173);"><tspan x=
+=3D"57" dy=3D"0.355em">7</tspan></text></g><g class=3D"recharts-layer recha=
+rts-cartesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" w=
+idth=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"115" class=3D"rec=
+harts-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" style=3D=
+"fill: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">14</tspan></text=
+></g><g class=3D"recharts-layer recharts-cartesian-axis-tick-label"><text s=
+troke=3D"none" orientation=3D"left" width=3D"60" height=3D"220" fill=3D"#8b=
+98ad" x=3D"57" y=3D"60" class=3D"recharts-text recharts-cartesian-axis-tick=
+-value" text-anchor=3D"end" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D=
+"57" dy=3D"0.355em">21</tspan></text></g><g class=3D"recharts-layer rechart=
+s-cartesian-axis-tick-label"><text stroke=3D"none" orientation=3D"left" wid=
+th=3D"60" height=3D"220" fill=3D"#8b98ad" x=3D"57" y=3D"10.654205322265625"=
+ class=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D"=
+end" style=3D"fill: rgb(139, 152, 173);"><tspan x=3D"57" dy=3D"0.355em">28<=
+/tspan></text></g></g></g></svg></div></div></div></div></div><div class=3D=
+"card panel"><h2>Live Video</h2><div><video controls=3D"" src=3D"blob:http:=
+//localhost:5173/dd839fcc-74b0-461e-be3b-eee91d541a43" style=3D"width: 100%=
+; height: 260px; background: rgb(0, 0, 0); border-radius: 8px;"></video></d=
+iv></div></div><div class=3D"card panel"><h2>Recent Detection Events</h2><d=
+iv class=3D"table-wrap"><table><thead><tr><th>#</th><th>Vehicle ID</th><th>=
+Type</th><th>Colour</th><th>Direction</th><th>Time</th></tr></thead><tbody>=
+<tr><td>27</td><td>199</td><td>bus</td><td><span class=3D"swatch" style=3D"=
+background: rgb(241, 241, 241);"></span>white</td><td>down</td><td>11/26/20=
+26, 6:10:36 PM</td></tr><tr><td>26</td><td>309</td><td>motorcycle</td><td><=
+span class=3D"swatch" style=3D"background: rgb(17, 17, 17);"></span>black</=
+td><td>down</td><td>11/26/2026, 6:10:34 PM</td></tr><tr><td>25</td><td>259<=
+/td><td>car</td><td><span class=3D"swatch" style=3D"background: rgb(241, 24=
+1, 241);"></span>white</td><td>down</td><td>11/26/2026, 6:10:31 PM</td></tr=
+><tr><td>24</td><td>282</td><td>motorcycle</td><td><span class=3D"swatch" s=
+tyle=3D"background: rgb(17, 17, 17);"></span>black</td><td>down</td><td>11/=
+26/2026, 6:10:30 PM</td></tr><tr><td>23</td><td>297</td><td>motorcycle</td>=
+<td><span class=3D"swatch" style=3D"background: rgb(17, 17, 17);"></span>bl=
+ack</td><td>down</td><td>11/26/2026, 6:10:30 PM</td></tr><tr><td>22</td><td=
+>296</td><td>motorcycle</td><td><span class=3D"swatch" style=3D"background:=
+ rgb(17, 17, 17);"></span>black</td><td>down</td><td>11/26/2026, 6:10:27 PM=
+</td></tr><tr><td>21</td><td>274</td><td>motorcycle</td><td><span class=3D"=
+swatch" style=3D"background: rgb(17, 17, 17);"></span>black</td><td>down</t=
+d><td>11/26/2026, 6:10:22 PM</td></tr><tr><td>20</td><td>214</td><td>motorc=
+ycle</td><td><span class=3D"swatch" style=3D"background: rgb(17, 17, 17);">=
+</span>black</td><td>down</td><td>11/26/2026, 6:10:21 PM</td></tr><tr><td>1=
+9</td><td>236</td><td>truck</td><td><span class=3D"swatch" style=3D"backgro=
+und: rgb(128, 128, 128);"></span>grey</td><td>down</td><td>11/26/2026, 6:10=
+:17 PM</td></tr><tr><td>18</td><td>239</td><td>car</td><td><span class=3D"s=
+watch" style=3D"background: rgb(241, 241, 241);"></span>white</td><td>down<=
+/td><td>11/26/2026, 6:10:17 PM</td></tr><tr><td>17</td><td>228</td><td>moto=
+rcycle</td><td><span class=3D"swatch" style=3D"background: rgb(17, 17, 17);=
+"></span>black</td><td>down</td><td>11/26/2026, 6:10:14 PM</td></tr><tr><td=
+>16</td><td>184</td><td>motorcycle</td><td><span class=3D"swatch" style=3D"=
+background: rgb(17, 17, 17);"></span>black</td><td>down</td><td>11/26/2026,=
+ 6:10:05 PM</td></tr><tr><td>15</td><td>115</td><td>car</td><td><span class=
+=3D"swatch" style=3D"background: rgb(17, 17, 17);"></span>black</td><td>dow=
+n</td><td>11/26/2026, 6:10:05 PM</td></tr><tr><td>14</td><td>174</td><td>mo=
+torcycle</td><td><span class=3D"swatch" style=3D"background: rgb(17, 17, 17=
+);"></span>black</td><td>down</td><td>11/26/2026, 6:10:04 PM</td></tr><tr><=
+td>13</td><td>139</td><td>motorcycle</td><td><span class=3D"swatch" style=
+=3D"background: rgb(17, 17, 17);"></span>black</td><td>down</td><td>11/26/2=
+026, 6:10:04 PM</td></tr><tr><td>12</td><td>146</td><td>motorcycle</td><td>=
+<span class=3D"swatch" style=3D"background: rgb(17, 17, 17);"></span>black<=
+/td><td>down</td><td>11/26/2026, 6:10:00 PM</td></tr><tr><td>11</td><td>134=
+</td><td>motorcycle</td><td><span class=3D"swatch" style=3D"background: rgb=
+(17, 17, 17);"></span>black</td><td>down</td><td>11/26/2026, 6:09:57 PM</td=
+></tr><tr><td>10</td><td>25</td><td>car</td><td><span class=3D"swatch" styl=
+e=3D"background: rgb(17, 17, 17);"></span>black</td><td>down</td><td>11/26/=
+2026, 6:09:53 PM</td></tr><tr><td>9</td><td>106</td><td>motorcycle</td><td>=
+<span class=3D"swatch" style=3D"background: rgb(192, 192, 192);"></span>sil=
+ver</td><td>down</td><td>11/26/2026, 6:09:50 PM</td></tr><tr><td>8</td><td>=
+68</td><td>motorcycle</td><td><span class=3D"swatch" style=3D"background: r=
+gb(17, 17, 17);"></span>black</td><td>down</td><td>11/26/2026, 6:09:45 PM</=
+td></tr></tbody></table></div></div></div></div>
+   =20
+ =20
+
+<span id=3D"recharts_measurement_span" aria-hidden=3D"true" style=3D"positi=
+on: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; border-w=
+idth: medium; border-style: none; border-color: currentcolor; border-image:=
+ none; white-space: pre; fill: rgb(139, 152, 173); font-size: 16px; letter-=
+spacing: normal;">7</span><span id=3D"PING_CONTENT_PUSH_NOTIFICATION" style=
+=3D"display: none;"></span></body></html>
+------MultipartBoundary--mUPDl1zkjRgMavfVmW6zlejM6FBgPnka6UtPwy9xLX----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-5d1790ec-d110-4dda-ba94-6f6a31195474@mhtml.blink
+
+@charset "utf-8";
+
+.app { max-width: 1200px; margin: 0px auto; padding: 20px; }
+
+.header { display: flex; justify-content: space-between; align-items: cente=
+r; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+
+.header h1 { margin: 0px; font-size: 1.5rem; }
+
+.status { font-size: 0.85rem; color: rgb(139, 152, 173); }
+
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; =
+background: rgb(34, 197, 94); margin-right: 6px; }
+
+.dot.off { background: rgb(239, 68, 68); }
+
+.grid-cards { display: grid; gap: 14px; margin-bottom: 20px; grid-template-=
+columns: repeat(auto-fit, minmax(160px, 1fr)); }
+
+.card { background: rgb(19, 28, 46); border: 1px solid rgb(31, 43, 68); bor=
+der-radius: 12px; padding: 16px; }
+
+.card .label { color: rgb(139, 152, 173); font-size: 0.85rem; margin-bottom=
+: 6px; }
+
+.card .value { font-size: 2rem; font-weight: 700; }
+
+.card.total { border-color: rgb(47, 107, 255); }
+
+.grid-main { display: grid; gap: 14px; margin-bottom: 20px; grid-template-c=
+olumns: repeat(auto-fit, minmax(340px, 1fr)); }
+
+.panel h2 { margin: 0px 0px 12px; font-size: 1.05rem; }
+
+.chart-box { width: 100%; height: 260px; }
+
+.video-box { height: 260px; display: flex; align-items: center; justify-con=
+tent: center; text-align: center; color: rgb(139, 152, 173); border: 1px da=
+shed rgb(42, 58, 92); border-radius: 8px; padding: 12px; }
+
+.table-wrap { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid rgb(=
+31, 43, 68); }
+
+th { color: rgb(139, 152, 173); font-weight: 600; }
+
+.swatch { display: inline-block; width: 12px; height: 12px; border-radius: =
+50%; border: 1px solid rgb(85, 85, 85); margin-right: 6px; vertical-align: =
+middle; }
+
+.empty { color: rgb(139, 152, 173); padding: 12px 0px; }
+------MultipartBoundary--mUPDl1zkjRgMavfVmW6zlejM6FBgPnka6UtPwy9xLX----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-2bc2b65a-71fd-4953-a14a-9dfcf0fa7f08@mhtml.blink
+
+@charset "utf-8";
+
+* { box-sizing: border-box; }
+
+body { margin: 0px; font-family: "Segoe UI", system-ui, -apple-system, Aria=
+l, sans-serif; background: rgb(11, 18, 32); color: rgb(229, 233, 240); }
+------MultipartBoundary--mUPDl1zkjRgMavfVmW6zlejM6FBgPnka6UtPwy9xLX------

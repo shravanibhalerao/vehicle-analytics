@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+node_modules/
+.env
+videos/*.mp4
+mediamtx/mediamtx.exe
+*.pt
+debug_crops/
+mediamtx/auto.key
+mediamtx/auto.crt
